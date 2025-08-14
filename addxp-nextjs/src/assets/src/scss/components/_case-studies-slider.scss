@@ -1,0 +1,243 @@
+.casestudy-slider-component {
+  @include component_space_150;
+
+  @media (max-width: $desktop-breakpoint2) {
+    margin: 100px auto;
+  }
+
+  .tag-line,
+  .sub_title_5 {
+    text-align: center;
+  }
+
+  .tag-line {
+    margin-bottom: 0;
+  }
+
+  .sub_title_5 {
+    margin-top: 15px;
+
+    @media (max-width: $tablet-original) {
+      margin-top: 10px;
+    }
+  }
+
+  .owl-carousel {
+    margin-top: 60px;
+
+    @media (max-width: $tablet-original) {
+      margin-top: 50px;
+    }
+
+    .owl-item {
+      height: 100%;
+    }
+
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      margin-top: -60px;
+      width: calc(100% + 160px);
+      margin-left: -80px;
+
+      button {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-color: $white !important;
+        position: relative;
+        margin: 0;
+        position: absolute;
+
+        @media (max-width: $mobile-breakpoint) {
+          display: none;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 2px;
+          border-radius: 10px 10px 0 0;
+          background-color: $tag-color;
+          transform: rotate(45deg);
+          margin-top: -6px;
+          margin-left: -2px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 2px;
+          border-radius: 10px 10px 0 0;
+          background-color: $tag-color;
+          transform: rotate(138deg);
+          margin-top: -1px;
+          margin-left: -2px;
+        }
+
+        &.owl-prev {
+          left: 0;
+
+          @media (max-width: $desktop-breakpoint2) {
+            left: 60px;
+            box-shadow: 0 0px 2px 0px rgba(0, 0, 0, 0.4392156863);
+          }
+        }
+
+        &.owl-next {
+          right: 0;
+          transform: rotate(180deg);
+
+          @media (max-width: $desktop-breakpoint2) {
+            right: 60px;
+            box-shadow: 0 0px 2px 0px rgba(0, 0, 0, 0.4392156863);
+          }
+        }
+      }
+    }
+
+    .owl-dots {
+      margin-top: 40px;
+
+      @media (max-width: $desktop-breakpoint2) {
+        margin-top: 20px;
+      }
+
+      .owl-dot {
+        margin: 0 6px;
+
+        span {
+          margin: 0;
+          background-color: $light-gray1;
+        }
+
+        &.active {
+          span {
+            width: 30px;
+            background-color: $tag-color;
+          }
+        }
+
+        &:hover {
+          span {
+            background-color: $tag-color;
+          }
+        }
+      }
+    }
+
+    .case-study-item {
+      .case-study-card {
+        display: flex;
+        gap: 40px;
+        background-color: $white;
+        border-radius: 20px;
+        height: 100%;
+
+        @media (max-width: $desktop-breakpoint2) {
+          gap: 20px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        @media (max-width: $tablet-original) {
+          border-radius: 16px;
+        }
+
+        .case-content {
+          padding: 40px 0 40px 40px;
+
+          @media (max-width: $mobile-breakpoint) {
+            order: 2;
+          }
+
+          @media (max-width: $tablet-original) {
+            padding: 24px 20px;
+          }
+
+          h6 {
+            font-weight: 600;
+
+            @media (max-width: $desktop-breakpoint2) {
+              font-size: 30px;
+              line-height: 42px;
+            }
+
+            @media (max-width: $tablet-original) {
+              font-size: 22px;
+              line-height: 33px !important;
+              font-weight: normal;
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-bottom: 0;
+            }
+          }
+
+          p {
+            margin-bottom: 0;
+
+            @media (max-width: $tablet-original) {
+              display: -webkit-box;
+              -webkit-line-clamp: 4;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .head-description {
+            margin-top: 34px;
+
+            @media (max-width: $desktop-breakpoint2) {
+              margin-top: 20px;
+            }
+
+            @media (max-width: $tablet-original) {
+              margin-top: 24px;
+            }
+          }
+
+          .btn-defualt {
+            margin-top: 48px;
+
+            @media (max-width: $desktop-breakpoint2) {
+              margin-top: 30px;
+            }
+
+            @media (max-width: $tablet-original) {
+              margin-top: 24px;
+            }
+          }
+        }
+
+        .case-image-wrap {
+          img {
+            border-radius: 20px;
+            height: 100%;
+            object-fit: cover;
+            width: 420px;
+
+            @media (max-width: $mobile-breakpoint) {
+              width: 100%;
+              max-height: 350px;
+            }
+
+            @media (max-width: $tablet-original) {
+              border-radius: 16px;
+              max-height: fit-content;
+              height: 210px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

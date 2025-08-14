@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "development_processes",
+  "info": {
+    "singularName": "development-process",
+    "pluralName": "development-processes",
+    "displayName": "DevelopmentProcess",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.img-desc"
+    }
+  }
+}

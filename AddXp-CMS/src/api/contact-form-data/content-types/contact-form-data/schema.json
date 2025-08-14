@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_datas",
+  "info": {
+    "singularName": "contact-form-data",
+    "pluralName": "contact-form-datas",
+    "displayName": "ContactFormData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string"
+    },
+    "BusinessEmail": {
+      "type": "email"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "Requirement": {
+      "type": "text"
+    }
+  }
+}

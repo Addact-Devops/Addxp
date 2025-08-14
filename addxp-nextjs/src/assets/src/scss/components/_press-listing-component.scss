@@ -1,0 +1,61 @@
+.press-listing-component {
+  @include component_space;
+
+  .press-listing-box {
+    display: flex;
+    background: $dark-gray1;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+    border-radius: 20px;
+
+    @media (max-width: $mobile-breakpoint) {
+      padding: 15px 15px 30px;
+      margin-bottom: 50px;
+      flex-direction: column;
+    }
+
+    .press-listing-left {
+      img {
+        border-radius: 20px;
+        width: 410px;
+        display: block;
+        @media (max-width: $mobile-breakpoint) {
+          width: 100%;
+        }
+      }
+    }
+
+    .press-listing-right {
+      padding-left: 35px;
+      @media (max-width: $mobile-breakpoint) {
+        padding: 25px 0 0;
+      }
+
+      .large {
+        margin-bottom: 20px;
+        color: $white;
+      }
+
+      p {
+        margin-bottom: 30px;
+        color: $white;
+        font-size: 15px;
+      }
+
+      .btn-defualt {
+        margin-top: 0;
+      }
+
+      .press-listing-date {
+        font-size: 18px;
+        color: $light-gray;
+        margin: 10px 0;
+
+        @media (max-width: $mobile-breakpoint) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

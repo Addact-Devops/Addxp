@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_titles",
+  "info": {
+    "singularName": "contact-form-title",
+    "pluralName": "contact-form-titles",
+    "displayName": "ContactFormTitle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "Right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "Left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "left-panel.left-panel"
+    }
+  }
+}

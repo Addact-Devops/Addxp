@@ -1,0 +1,66 @@
+.our-engagement-section {
+  width: 100%;
+  background: $dark-black;
+  @include component_space;
+
+  .our-engagement-bg {
+    background: $white;
+    padding: 40px 98px 70px;
+    border-radius: 20px;
+    @media (max-width: $tablet-breakpoint) {
+      padding: 35px 40px;
+    }
+    @media (max-width: $mobile-breakpoint) {
+      padding: 30px 15px;
+    }
+
+    .engagement-top {
+      max-width: 690px;
+    }
+
+    h5,
+    .sub_title_5 {
+      margin-bottom: 15px;
+      color: $tag-color;
+    }
+
+    .row {
+      margin: 44px -8px 0;
+      @media (max-width: $mobile-breakpoint) {
+        margin-top: 50px;
+      }
+      .col-md-6 {
+        margin-top: 16px;
+        padding: 0 8px;
+        @media (max-width: $mobile-breakpoint) {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .enegagement-box {
+        background: $dark-black;
+        padding: 30px 21px 30px 30px;
+        border-radius: 20px;
+        height: 100%;
+
+        @media (max-width: $mobile-breakpoint) {
+          padding: 25px 15px;
+          min-height: auto;
+        }
+
+        h5,
+        .sub_title_5 {
+          margin-bottom: 15px;
+          color: $white;
+        }
+
+        p {
+          color: $white;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

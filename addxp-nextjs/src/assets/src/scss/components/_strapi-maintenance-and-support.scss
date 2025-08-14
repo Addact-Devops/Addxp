@@ -1,0 +1,212 @@
+.strapi-maintenance-banner {
+  &.contact-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-maintenance-and-support-mobile-banner.png)
+        no-repeat left top !important;
+      background-size: cover !important;
+    }
+  }
+}
+
+.table-component {
+  margin: 150px 0;
+
+  @media (max-width: $mobile-breakpoint-xs) {
+    margin: 100px 0;
+    height: 700px;
+    overflow-y: auto;
+  }
+
+  .col-md-none {
+    @media (max-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+
+  h5,
+  .sub_title_5 {
+    color: $tag-color;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media (max-width: $mobile-breakpoint-xs) {
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    color: $white;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .col-12 {
+    @media (max-width: $tablet-breakpoint) {
+      width: 100%;
+    }
+  }
+
+  .col-6 {
+    @media (max-width: $tablet-breakpoint) {
+      width: 50%;
+    }
+  }
+
+  .point-differentiator-box {
+    min-width: 278px;
+    height: 65px;
+    background-color: $dark-gray1;
+    color: $tag-color;
+    padding: 17px 30px;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 33px;
+
+    @media (max-width: $tablet-breakpoint) {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: $mobile-breakpoint-xs) {
+      height: 43px;
+      font-size: 17px;
+      line-height: 26px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+  .main-point-box {
+    font-size: 30px;
+    line-height: 46px;
+    color: $white;
+    margin: 100px 0 30px;
+    text-align: center;
+
+    @media (max-width: $tablet-breakpoint) {
+      background-color: $dark-gray1;
+      border: 1px solid $tag-color;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    @media (max-width: $mobile-breakpoint-xs) {
+      margin: 80px 0 50px;
+      padding: 19px 24px;
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .point-difference-box {
+    background-color: $white;
+    color: $black;
+    min-width: 376px;
+    height: auto;
+    padding: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 10px;
+    word-break: break-word;
+
+    @media (max-width: $desktop-breakpoint) {
+      min-width: auto;
+    }
+
+    @media (max-width: $mobile-breakpoint-xs) {
+      padding: 15px 10px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  .row {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+
+      @media (max-width: $mobile-breakpoint-xs) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:last-child {
+      align-items: center;
+
+      .point-difference-box {
+        color: $white;
+        background-color: $tag-color;
+        text-align: center;
+        padding: 11px;
+        font-size: 15px;
+        line-height: 25px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $btn-hover;
+        }
+      }
+    }
+  }
+
+  .stickyonphone {
+    @media (max-width: $mobile-breakpoint) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #131318;
+      padding: 0 25px;
+    }
+  }
+}
+
+.horizontal-strapi-resources {
+  &.horizontal-strapi-maintenance-and-support {
+    .horizontal-scroll-section__content-section {
+      &:first-child {
+        .box {
+          .box-desc {
+            min-height: 138px;
+
+            &:before {
+              bottom: -99px;
+            }
+          }
+
+          &:nth-child(even) {
+            .box-desc {
+              &::before {
+                top: -99px;
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        .box {
+          .box-desc {
+            min-height: 154px;
+          }
+
+          &:nth-child(even) {
+            .box-desc {
+              &::before {
+                bottom: -83px;
+              }
+            }
+          }
+
+          &:nth-child(odd) {
+            .box-desc {
+              &::before {
+                top: -83px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

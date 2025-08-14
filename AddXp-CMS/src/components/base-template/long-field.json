@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_base_template_long_fields",
+  "info": {
+    "displayName": "LongField"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "LongTitle": {
+      "type": "text"
+    }
+  }
+}

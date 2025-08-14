@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "related_services",
+  "info": {
+    "singularName": "related-service",
+    "pluralName": "related-services",
+    "displayName": "RelatedService",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ServiceDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.description"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

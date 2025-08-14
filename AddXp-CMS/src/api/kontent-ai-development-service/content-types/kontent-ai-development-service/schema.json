@@ -1,0 +1,85 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontent_ai_development_services",
+  "info": {
+    "singularName": "kontent-ai-development-service",
+    "pluralName": "kontent-ai-development-services",
+    "displayName": "Kontent-ai-Development-Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "service_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service-title.service-title"
+    },
+    "cta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cta.cta"
+    },
+    "service_experience": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service-experience.service-experience"
+    },
+    "our_service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::our-service.our-service"
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "experience": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::experience.experience"
+    },
+    "news_heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::news-heading.news-heading"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "faq_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faq-title.faq-title"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    },
+    "contact_form": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-form-title.contact-form-title"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

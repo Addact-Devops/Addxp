@@ -1,0 +1,30 @@
+.hire-resource {
+  background: $dark-black !important;
+  .accordian-top,
+  .latest-top {
+    p {
+      color: $white;
+    }
+  }
+  .latest-desc {
+    .large {
+      color: $white;
+    }
+
+    ul {
+      li {
+        &:before {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  .consultaion-component {
+    padding-bottom: 0;
+
+    .consultaion-desc {
+      max-width: 602px;
+    }
+  }
+}

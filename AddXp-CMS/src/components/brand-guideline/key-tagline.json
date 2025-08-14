@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_brand_guideline_key_taglines",
+  "info": {
+    "displayName": "KeyTagline",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "integer",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

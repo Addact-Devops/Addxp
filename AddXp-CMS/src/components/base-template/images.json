@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_base_template_images",
+  "info": {
+    "displayName": "Images"
+  },
+  "options": {},
+  "attributes": {
+    "ImageDesktop": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ImageMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

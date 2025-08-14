@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_base_template_descriptions",
+  "info": {
+    "displayName": "Description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Body": {
+      "type": "richtext"
+    },
+    "Summary": {
+      "type": "richtext"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}

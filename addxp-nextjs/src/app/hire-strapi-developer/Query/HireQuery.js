@@ -1,0 +1,106 @@
+export const ENGAGE_MODEL = (parameter) => `
+query{
+     ${parameter}{
+      data{
+        id
+        attributes{
+          engagement_model{
+            data{
+              id
+              attributes{
+                MainTitle{
+                  id
+                  Title
+                  Description
+                }
+                MultilistData{
+                  id
+                  Title
+                  Description
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const AVAILABILITY = (parameter) => `
+query{
+    ${parameter}{
+      data{
+        id
+        attributes{
+          availability{
+            data{
+              id
+              attributes{
+                Availability{
+                  id
+                  Title
+                  SubTitle
+                  Body
+                  Description
+                  Images{
+                    data{
+                      id
+                      attributes{
+                        alternativeText
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+export const HIRE_TAB_QUERY = (parameter) => `
+query{
+   ${parameter}{
+    data{
+      id
+      attributes{
+        hire_tab_component{
+          data{
+            id
+            attributes{
+              TitleData{
+                id
+                Title
+                Description
+              }
+              TabData{
+                id
+                Title
+                Description
+                Image{
+                  data{
+                    id
+                    attributes
+                    {
+                      url
+                      alternativeText
+                    }
+                  }
+                }
+                Link{
+                  id
+                  href
+                  label
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+`;

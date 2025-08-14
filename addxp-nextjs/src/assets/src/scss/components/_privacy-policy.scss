@@ -1,0 +1,51 @@
+.privacy-policy-section {
+  margin: 0 0 80px 0;
+  background-color: $light-gray-light;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0 0 40px 0;
+  }
+
+  ul,
+  ol {
+    padding-left: 17px;
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  ol {
+    li {
+      padding-left: 8px;
+    }
+  }
+
+  p {
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 60px;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .privacy-title {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+    margin: 40px 0 30px;
+  }
+
+  .email-text {
+    text-align: left;
+    font: normal normal 600 17px/35px Poppins;
+    letter-spacing: 0px;
+    color: #e97777;
+  }
+}

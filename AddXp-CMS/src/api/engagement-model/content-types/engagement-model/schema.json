@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "engagement_models",
+  "info": {
+    "singularName": "engagement-model",
+    "pluralName": "engagement-models",
+    "displayName": "Engagement-Model"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "MainTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "MultilistData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title-description"
+    }
+  }
+}

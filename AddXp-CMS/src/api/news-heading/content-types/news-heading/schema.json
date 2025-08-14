@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_headings",
+  "info": {
+    "singularName": "news-heading",
+    "pluralName": "news-headings",
+    "displayName": "NewsHeading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "NewsHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.consultaion-component {
+  padding: 0 0 100px;
+  background: $dark-black;
+
+  .container {
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-bottom: 50px;
+  }
+  .consultaion-main {
+    min-height: 447px;
+    @include flexbox;
+    align-items: center;
+    border-radius: 20px;
+    background-size: cover !important;
+    @media (max-width: $mobile-breakpoint) {
+      align-items: flex-end;
+      background-position: center !important;
+      padding: 35px 15px;
+      width: 100%;
+      background-size: cover !important;
+      border-radius: 20px;
+    }
+
+    .consultaion-desc {
+      padding-left: 40px;
+      max-width: 65%;
+      @media (max-width: $mobile-breakpoint) {
+        padding-left: 0;
+        max-width: 100%;
+      }
+
+      .sub_title_5 {
+        line-height: 50px;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: $white;
+        margin-bottom: 42px;
+        max-width: 80%;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 35px;
+          max-width: 100%;
+        }
+      }
+
+      .search-container {
+        max-width: 427px;
+        form {
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding-right: 102px;
+        }
+        input[type="email"] {
+          padding: 0 10px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+          border-radius: 10px 0 0 10px;
+          height: 47px;
+          background: $dark-black;
+          width: 100%;
+          color: $white;
+          @media (max-width: $mobile-breakpoint) {
+            font-size: 12px;
+          }
+          &:focus {
+            outline: none;
+          }
+
+          &::-webkit-input-placeholder {
+            /* Edge */
+            color: $white;
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $white;
+          }
+
+          &::placeholder {
+            color: $white;
+          }
+        }
+
+        .submit-btn {
+          max-width: 102px;
+          height: 47px;
+          background: $tag-color;
+          border-radius: 0 10px 10px 0;
+          width: 100%;
+          box-shadow: none;
+          border: 0;
+          position: absolute;
+          right: 0;
+          top: 8px;
+          font-size: 15px;
+          line-height: 21px;
+          font-weight: 600;
+          color: $white;
+          @include transition;
+
+          &:hover {
+            background: $btn-hover;
+          }
+        }
+      }
+    }
+  }
+}

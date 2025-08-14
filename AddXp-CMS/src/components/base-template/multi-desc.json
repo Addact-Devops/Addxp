@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_base_template_multi_descs",
+  "info": {
+    "displayName": "MultiDesc"
+  },
+  "options": {},
+  "attributes": {
+    "Body": {
+      "type": "richtext"
+    },
+    "Summary": {
+      "type": "richtext"
+    }
+  }
+}

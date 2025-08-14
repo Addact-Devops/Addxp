@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_titles",
+  "info": {
+    "singularName": "form-title",
+    "pluralName": "form-titles",
+    "displayName": "FormTitle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.empowerment"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "Blogs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blogs.blogs"
+    },
+    "EventTitle": {
+      "type": "enumeration",
+      "enum": [
+        "All Blogs",
+        "Headless",
+        "Digital Experience",
+        "Content Experience",
+        "User Experience",
+        "Umbraco"
+      ]
+    },
+    "HeadDescription": {
+      "type": "richtext"
+    },
+    "AboutDescription": {
+      "type": "richtext"
+    },
+    "Slug": {
+      "type": "uid"
+    },
+    "BlogBody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blogs.blog-body"
+    },
+    "Conclusion": {
+      "type": "richtext"
+    },
+    "social_icons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-icon.social-icon"
+    },
+    "Similar_blog": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

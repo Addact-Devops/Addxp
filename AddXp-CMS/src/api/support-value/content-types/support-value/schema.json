@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "support_values",
+  "info": {
+    "singularName": "support-value",
+    "pluralName": "support-values",
+    "displayName": "SupportValue",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RowTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.main-title"
+    },
+    "RowData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.long-text"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

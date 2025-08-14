@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_not_founds",
+  "info": {
+    "singularName": "page-not-found",
+    "pluralName": "page-not-founds",
+    "displayName": "PageNotFound",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true
+    },
+    "Description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.basic-component"
+    },
+    "GoBackLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

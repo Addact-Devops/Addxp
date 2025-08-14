@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FooterImg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

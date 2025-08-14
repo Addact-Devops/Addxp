@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_18470" data-name="Group 18470" transform="translate(-718 -6549)">
+    <rect id="Rectangle_122" data-name="Rectangle 122" width="32" height="32" rx="5" transform="translate(718 6549)" fill="#e97777" opacity="0.2"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(722.734 6553.609)">
+      <g id="shopping-cart" transform="translate(0.265 0.265)">
+        <rect id="Rectangle_121" data-name="Rectangle 121" width="22" height="22" transform="translate(0.001 0.126)" fill="#e97777" opacity="0"/>
+        <path id="Path_224489" data-name="Path 224489" d="M19.745,6.72a1.86,1.86,0,0,0-1.581-.93H6.26l-.539-2.1A.93.93,0,0,0,4.79,3H2.93a.93.93,0,1,0,0,1.86H4.083L6.65,14.4a.93.93,0,0,0,.93.688h8.37a.93.93,0,0,0,.828-.512l3.051-6.1A1.86,1.86,0,0,0,19.745,6.72Zm-4.371,6.51H8.287L6.771,7.65H18.164Z" transform="translate(-0.335 -0.405)" fill="#e97777"/>
+        <circle id="Ellipse_25" data-name="Ellipse 25" cx="1.5" cy="1.5" r="1.5" transform="translate(6.001 16.126)" fill="#e97777"/>
+        <circle id="Ellipse_26" data-name="Ellipse 26" cx="1.5" cy="1.5" r="1.5" transform="translate(15.001 16.126)" fill="#e97777"/>
+      </g>
+    </g>
+  </g>
+</svg>

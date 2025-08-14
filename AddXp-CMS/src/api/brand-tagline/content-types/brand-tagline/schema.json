@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_taglines",
+  "info": {
+    "singularName": "brand-tagline",
+    "pluralName": "brand-taglines",
+    "displayName": "Brand-tagline",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    },
+    "Tagline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.main-title"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

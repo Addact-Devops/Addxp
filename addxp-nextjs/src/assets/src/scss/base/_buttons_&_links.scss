@@ -1,0 +1,185 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+@import "color";
+
+.dark-background-button {
+   background-color: $black;
+   padding: 50px;
+}
+
+.light-background-button {
+   background-color: $white;
+   padding: 50px;
+}
+
+.btn-defualt {
+   // font-family: "Poppins", sans-serif;
+   text-transform: uppercase;
+   font-size: 15px;
+   line-height: 25px;
+   font-weight: 600;
+   border: none;
+   transition: all 0.3s;
+   text-align: center;
+   max-width: fit-content;
+   text-align: center;
+   height: 41px;
+   text-transform: capitalize;
+   border-radius: 10px;
+   background: $tag-color;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: $white;
+   justify-content: center;
+   margin-top: 50px;
+   padding: 0 16px;
+
+   &:hover {
+      background: $btn-hover;
+      color: $white;
+   }
+}
+
+.fill-button-1 {
+   background-color: $white;
+   color: $black;
+
+   &:hover {
+      background-color: $dark-blue;
+      color: $white;
+   }
+}
+
+.fill-button-2 {
+   background-color: $dark-blue;
+   color: $white;
+
+   &:hover {
+      background-color: $fill-btn-2;
+   }
+}
+
+.fill-button-3 {
+   padding: 13px 26px;
+   font-size: 20px;
+   line-height: 24px;
+   font-family: "Montserrat", sans-serif;
+
+   border-radius: 5px;
+   transition: all 0.3s;
+   color: $dark-blue;
+   background-color: $white;
+
+   &:hover {
+      background-color: $fill-btn-2;
+      color: $white;
+   }
+}
+
+.text-btn-lg {
+   font-size: 35px;
+   line-height: 48px;
+   font-family: "Cardo", serif;
+   color: $dark-blue;
+}
+
+.switch-button {
+   position: relative;
+
+   .button-cover {
+      &,
+      .knobs,
+      .layer {
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+      }
+
+      .button {
+         position: relative;
+         top: 0;
+         width: 82px;
+         height: 40px;
+         overflow: hidden;
+         margin: 0 auto;
+
+         &.r,
+         .layer {
+            border-radius: 21px;
+         }
+
+         &.b2 {
+            border-radius: 2px;
+         }
+
+         .knobs,
+         .knobs:before,
+         .layer {
+            transition: 0.3s ease all;
+         }
+
+         &.switch-on {
+            .layer {
+               border-color: $tag-color;
+            }
+         }
+      }
+
+      .checkbox {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         padding: 0;
+         margin: 0;
+         opacity: 0;
+         cursor: pointer;
+         z-index: 3;
+
+         &:checked + .knobs:before {
+            content: "";
+            left: auto;
+            right: 6px;
+            background-color: $tag-color;
+         }
+
+         &:checked ~ .layer {
+            background-color: transparent;
+         }
+      }
+
+      .knobs {
+         z-index: 2;
+
+         &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 6px;
+            right: auto;
+            width: 30px;
+            height: 30px;
+            color: $white;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            padding: 9px 4px;
+            background-color: $white;
+            border-radius: 50%;
+            transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+         }
+      }
+
+      .layer {
+         width: 100%;
+         background-color: transparent;
+         border: 2px solid $white;
+         transition: 0.3s ease all;
+         z-index: 1;
+      }
+   }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_base_template_multi_images",
+  "info": {
+    "displayName": "MultiImages"
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

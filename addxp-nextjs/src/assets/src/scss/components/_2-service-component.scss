@@ -1,0 +1,59 @@
+.two-service-component {
+  text-align: center;
+  margin: 100px 0;
+  @media (max-width: $mobile-breakpoint) {
+    margin: 100px 0 50px;
+  }
+  h5,
+  .sub_title_5 {
+    margin-bottom: 15px;
+    color: $tag-color;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    color: $white;
+  }
+
+  .row {
+    margin-top: 60px;
+    @media (max-width: $mobile-breakpoint) {
+      margin-top: 50px;
+    }
+
+    .col-md-6 {
+      @media (max-width: $mobile-breakpoint) {
+        margin-bottom: 30px;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .two-service-bg {
+      background: $dark-gray1;
+      padding: 30px 60px 101px 35px;
+      border-radius: 20px;
+      text-align: left;
+      height: 100%;
+      position: relative;
+      @media (max-width: $mobile-breakpoint) {
+        padding: 30px 15px 101px 30px;
+        border-radius: 10px;
+      }
+
+      h5,
+      .sub_title_5 {
+        margin-bottom: 30px;
+        color: $white;
+      }
+
+      .btn-defualt {
+        position: absolute;
+        bottom: 30px;
+      }
+    }
+  }
+}

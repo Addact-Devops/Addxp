@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_about_us_mission_visions",
+  "info": {
+    "displayName": "MissionVision",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "SubTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "alignment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alignment.alignment"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_go_strapi_go_strapis",
+  "info": {
+    "displayName": "GoStrapi",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Number": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

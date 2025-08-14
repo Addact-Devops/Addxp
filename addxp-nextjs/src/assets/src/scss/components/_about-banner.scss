@@ -1,0 +1,111 @@
+.about-banner {
+  width: 100%;
+  min-height: 659px;
+  @include flexbox;
+  align-items: center;
+  background-size: cover !important;
+
+  &:before {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 659px;
+    content: "";
+    left: 0;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    height: 600px;
+    align-items: flex-end;
+    background-position: center !important;
+    position: relative;
+
+    &:before {
+      background: transparent
+        linear-gradient(180deg, #00000000 0%, #00000080 31%, #000000 100%) 0% 0%
+        no-repeat padding-box;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 600px;
+      content: "";
+      top: auto;
+    }
+  }
+  .about-main {
+    max-width: 572px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 40px;
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      color: $white;
+      margin-bottom: 15px;
+      display: block;
+
+      @media (max-width: $mobile-breakpoint) {
+        max-width: 215px;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+
+    .btn-defualt {
+      margin-top: 30px;
+    }
+  }
+
+  &.career-banner {
+    @media (max-width: $mobile-breakpoint) {
+      align-items: flex-end !important;
+      padding-bottom: 40px;
+      min-height: 600px;
+      position: relative;
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/career-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    h1 {
+      @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.tab-menu {
+  ul {
+    @include flexbox;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5px;
+
+    @media (max-width: $desktop-breakpoint) {
+      margin-left: 25px !important;
+    }
+
+    li {
+      list-style: none;
+      margin-right: 50px;
+
+      a {
+        color: $white;
+        font-weight: normal;
+      }
+    }
+  }
+}

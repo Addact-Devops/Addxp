@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "srapi_versions",
+  "info": {
+    "singularName": "srapi-version",
+    "pluralName": "srapi-versions",
+    "displayName": "SrapiVersion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "MainTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "VersionTab": {
+      "displayName": "VersionTab",
+      "type": "component",
+      "repeatable": false,
+      "component": "version-tab.version-tab"
+    },
+    "VersionDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title-description"
+    }
+  }
+}

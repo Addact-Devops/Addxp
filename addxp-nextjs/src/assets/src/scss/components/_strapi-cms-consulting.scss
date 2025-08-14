@@ -1,0 +1,287 @@
+.strapi-cms-consulting {
+  &.contact-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-cms-consulting-mobile-banner.png) no-repeat
+        left top !important;
+      background-size: cover !important;
+    }
+  }
+}
+
+.go-strapi-cms {
+  background-color: $white;
+  min-height: 687px;
+  border-radius: 20px;
+  padding: 50px 98px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 30px 15px;
+  }
+}
+
+.strapi-img-text {
+  margin-bottom: 100px;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-bottom: 52px;
+  }
+
+  img {
+    margin-left: 114px;
+
+    @media (max-width: $tablet-breakpoint) {
+      display: block;
+      margin: 75px auto 0;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 251px;
+    }
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 25px;
+  }
+}
+
+.point-title {
+  display: flex;
+
+  p {
+    &:first-child {
+      font-size: 22px;
+      line-height: 33px;
+      color: $tag-color;
+      font-weight: 600;
+    }
+  }
+}
+
+.number-big {
+  font-size: 84px;
+  line-height: 173px;
+  color: $dark-gray1;
+  opacity: 0.1;
+  font-weight: 800;
+  position: absolute;
+  top: -54px;
+  right: 0;
+
+  @media (max-width: $tablet-breakpoint) {
+    margin-left: 50px;
+  }
+}
+
+.why-go-strapi-component {
+  @include component_space_150;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 100px;
+  }
+
+  .strapi-numbering-points {
+    @media (min-width: $tablet-breakpoint) {
+      display: flex;
+    }
+
+    .points-text-box {
+      position: relative;
+      .point-desc {
+        @media (max-width: $tablet-breakpoint) {
+          max-width: 700px;
+        }
+
+        @media (max-width: $tablet-breakpoint1) {
+          max-width: 600px;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+          max-width: 500px;
+        }
+
+        @media (max-width: calc(#{$mobile-breakpoint-xs} + 200px)) {
+          max-width: 400px;
+        }
+      }
+
+      p {
+        &:first-child {
+          @media (max-width: calc(#{$mobile-breakpoint-xs} + 100px)) {
+            max-width: 250px;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 65px;
+
+        @media (max-width: $tablet-breakpoint) {
+          margin: 0 0 50px;
+        }
+      }
+    }
+  }
+}
+
+.horizontal-strapi-cms {
+  &.development-process-component {
+    @media (max-width: $mobile-breakpoint) {
+      padding: 0 !important;
+    }
+
+    margin: 100px 0 50px;
+
+    .development-box {
+      ul {
+        li {
+          padding-left: 15px;
+          display: block;
+
+          &:not(:last-child) {
+            padding-bottom: 70px;
+          }
+
+          .regular {
+            margin-bottom: 20px;
+            margin-top: -10px;
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            width: 9px;
+            height: 9px;
+            left: -1px;
+          }
+
+          &::after {
+            border-left: 1px solid $tag-color;
+            width: 2px;
+            background: $tag-color;
+          }
+        }
+      }
+
+      @media (min-width: $mobile-breakpoint) {
+        display: none;
+      }
+    }
+
+    .horizontal-slider-main {
+      @media (max-width: $mobile-breakpoint) {
+        display: none;
+      }
+    }
+  }
+}
+
+.horizontal-strapi-resources {
+  &.horizontal-strapi-cms {
+    .horizontal-scroll-section__content-section {
+      &:first-child {
+        .box {
+          .box-desc {
+            &:before {
+              bottom: -98px;
+            }
+          }
+
+          &:nth-child(even) {
+            .box-desc {
+              &::before {
+                top: -84px;
+              }
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        .box {
+          &:nth-child(odd) {
+            .box-desc {
+              &::before {
+                top: -84px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.strapi-cms-calendly {
+  margin: 100px 0 150px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 50px 0 100px;
+  }
+
+  .calendly-inline-widget {
+    margin: 0 auto;
+    height: 447px !important;
+    width: 536px;
+
+    @media (max-width: $mobile-breakpoint) {
+      width: auto;
+      height: 407px !important;
+    }
+  }
+
+  .calendly-form-title {
+    background-image: url(https://do7q3d8g8n6kn.cloudfront.net/images/calendly-bg-img.png);
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 545px;
+    background-size: cover;
+    padding: 50px 40px;
+    border-radius: 20px;
+    align-items: center;
+
+    @media (max-width: $tablet-breakpoint) {
+      display: block;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      padding: 35px 15px;
+    }
+  }
+
+  .calendly-text {
+    @media (min-width: $tablet-breakpoint) {
+      max-width: 434px;
+      margin-right: 80px;
+    }
+
+    h5,
+    p,
+    .sub_title_5 {
+      color: $white;
+    }
+
+    h5,
+    .sub_title_5 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 55px;
+
+      @media (max-width: $mobile-breakpoint) {
+        line-height: 40px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.service-component-2 + .contact-form {
+  padding-top: 0 !important;
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_base_template_css_classes",
+  "info": {
+    "displayName": "CssClass",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "Class": {
+      "type": "enumeration",
+      "enum": [
+        "sitemap-icons user-experience-icon",
+        "sitemap-icons content-experience-icon",
+        "sitemap-icons commerce-experience-icon",
+        "sitemap-icons about-icon",
+        "sitemap-icons chat-icon",
+        "sitemap-icons career-icon",
+        "sitemap-icons blog-icon",
+        "sitemap-icons press-icon",
+        "sitemap-icons brand-icon",
+        "sitemap-title mb-60",
+        "sitemap-title"
+      ]
+    }
+  }
+}

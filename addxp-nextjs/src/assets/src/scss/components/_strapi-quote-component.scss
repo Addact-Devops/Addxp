@@ -1,0 +1,14 @@
+.strapi-quote-component {
+  @include component_space;
+  display: block;
+  text-align: center;
+
+  h5,
+  .sub_title_5 {
+    color: $white;
+    margin-bottom: 15px;
+  }
+  p {
+    color: $white;
+  }
+}

@@ -1,0 +1,36 @@
+.page-not-found {
+  min-height: 100vh;
+  text-align: center;
+  align-items: baseline;
+
+  &::before {
+    display: none;
+  }
+
+  h5,
+  p,
+  .sub_title_5 {
+    color: $white;
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .btn-defualt {
+    margin: 0 auto;
+  }
+
+  .container {
+    margin-top: 162px;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-top: 150px;
+    }
+  }
+}

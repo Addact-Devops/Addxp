@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "ui_ux_designers",
+  "info": {
+    "singularName": "ui-ux-designer",
+    "pluralName": "ui-ux-designers",
+    "displayName": "Ui-Ux-Designer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "Details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "upload_form_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::upload-form-title.upload-form-title"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

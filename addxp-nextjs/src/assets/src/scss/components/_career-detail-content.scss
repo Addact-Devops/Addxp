@@ -1,0 +1,36 @@
+.career-detail-content {
+  @include component_space;
+
+  .career-deatil-main {
+    @media (max-width: $mobile-breakpoint) {
+      padding-top: 30px;
+    }
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 35px;
+    margin-top: 50px;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 30px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+
+    li {
+      margin-bottom: 20px;
+      font-size: 17px;
+      line-height: 30px;
+      color: $black;
+
+      &:last-child {
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

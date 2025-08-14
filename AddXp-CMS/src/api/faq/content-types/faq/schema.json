@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQ": {
+      "type": "dynamiczone",
+      "components": [
+        "faq.faq"
+      ]
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

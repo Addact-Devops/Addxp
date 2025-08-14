@@ -1,0 +1,100 @@
+.contact-banner {
+  width: 100%;
+  min-height: 659px;
+  @include flexbox;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center;
+  @media (max-width: $mobile-breakpoint) {
+    align-items: flex-end !important;
+    padding-bottom: 40px;
+    min-height: 600px;
+    position: relative;
+
+    background: url(https://do7q3d8g8n6kn.cloudfront.net/images/Glass_image.png) no-repeat left top !important;
+    background-size: cover !important;
+    background-position: top left;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 15px;
+
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 35px;
+      line-height: 45px;
+    }
+  }
+  .contact-main {
+    max-width: 670px;
+    position: relative;
+    z-index: 1;
+
+    h5,
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 15px;
+      display: block;
+      line-height: 60px;
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+
+    .btn-defualt {
+      margin-top: 30px;
+    }
+  }
+
+  &.brand-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/brand-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      min-height: 600px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.press-release-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/press-release-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      min-height: 600px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.tab-menu {
+  margin-top: -50px;
+  ul {
+    @include flexbox;
+    margin: 0;
+    padding: 0;
+    position: static;
+    bottom: 5px;
+
+    li {
+      list-style: none;
+      margin-right: 50px;
+      margin-bottom: 20px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

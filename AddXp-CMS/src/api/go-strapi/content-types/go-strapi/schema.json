@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "go_strapis",
+  "info": {
+    "singularName": "go-strapi",
+    "pluralName": "go-strapis",
+    "displayName": "GoStrapi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "StrapiDesc": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.basic-component"
+    },
+    "Details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "go-strapi.go-strapi"
+    }
+  }
+}

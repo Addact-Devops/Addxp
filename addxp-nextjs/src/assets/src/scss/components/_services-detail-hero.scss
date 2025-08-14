@@ -1,0 +1,356 @@
+.services-detail-hero {
+  video {
+    height: 770px;
+    width: 100%;
+    object-fit: cover;
+    min-height: 770px;
+
+    @media (max-width: $tablet-breakpoint1) {
+      min-height: 870px;
+      height: auto;
+    }
+
+    @media (max-width: $tablet-original) {
+      min-height: 1100px;
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    right: 0;
+
+    @media (max-width: $tablet-original) {
+      top: 119px;
+    }
+
+    .services-detail-hero_content {
+      max-width: 495px;
+
+      &_title {
+        display: flex;
+        align-items: flex-end;
+
+        @media (max-width: $tablet-original) {
+          display: block;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .title-smalltext {
+          font-size: 14px;
+          line-height: 21px;
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          letter-spacing: 1.4px;
+
+          @media (max-width: $tablet-original) {
+            margin-top: 20px;
+            padding-bottom: 0;
+          }
+
+          img {
+            max-width: 25px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .title,
+      .title-smalltext,
+      .services-detail-hero_content_text {
+        color: $white;
+      }
+
+      &_text {
+        max-width: 474px;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media (max-width: $tablet-original) {
+          margin-top: 20px;
+          padding-bottom: 0;
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+
+    .services-detail-hero_highlights {
+      margin-top: 96px;
+
+      @media (max-width: $tablet-breakpoint1) {
+        margin-top: 60px;
+      }
+
+      .row {
+        margin: 0;
+
+        .col-md-6 {
+          padding: 0;
+
+          @media (max-width: $tablet-breakpoint1) {
+            width: 100%;
+          }
+
+          &:nth-child(odd) {
+            padding-right: 8px;
+          }
+
+          &:nth-child(even) {
+            padding-left: 8px;
+          }
+        }
+      }
+
+      &_experts {
+        padding: 25px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          backdrop-filter: blur(17px);
+          -webkit-backdrop-filter: blur(17px);
+          background-color: #ffffff1f;
+          z-index: 1;
+        }
+
+        .experts_btncontent {
+          position: relative;
+          z-index: 4;
+          display: flex;
+          align-items: baseline;
+
+          @media (max-width: $tablet-original) {
+            display: block;
+          }
+
+          .btn-tag-wrapper {
+            min-width: 40%;
+
+            .btn-tag {
+              width: fit-content;
+            }
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 25px;
+            max-width: 60%;
+            padding-left: 52px;
+            color: $white;
+            margin-bottom: 0;
+
+            @media (max-width: $tablet-original) {
+              max-width: 270px;
+              padding-left: 0;
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .experts-count-chat {
+          position: relative;
+          z-index: 4;
+          display: flex;
+          align-items: center;
+          margin-top: 42px;
+
+          @media (max-width: $tablet-original) {
+            display: block;
+            margin: 0;
+          }
+
+          &_number {
+            display: flex;
+            align-items: center;
+            color: $white;
+            min-width: 40%;
+
+            @media (max-width: $tablet-original) {
+              margin: 20px 0;
+            }
+
+            .number {
+              font-size: 60px;
+              line-height: 79px;
+              color: $white;
+              line-height: 50px;
+            }
+
+            .text {
+              font-size: 15px;
+              line-height: 20px;
+              margin-left: 15px;
+            }
+          }
+
+          &_img {
+            max-width: 60%;
+            padding-left: 52px;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $tablet-original) {
+              padding-left: 0;
+              max-width: 100%;
+            }
+
+            img {
+              max-width: 102px;
+              margin-right: 20px;
+            }
+
+            a,span {
+              color: $tag-color;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &_itemlist {
+        @media (max-width: $tablet-breakpoint1) {
+          width: 100%;
+          margin-top: 60px;
+        }
+
+        .highlights_item {
+          border: 1px solid $white;
+          border-radius: 20px;
+          padding: 29px 35px 29px 87px;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          @media (max-width: $tablet-breakpoint2) {
+            padding: 29px 35px 29px 65px;
+          }
+
+          @media (max-width: $tablet-breakpoint1) {
+            width: calc(50% - 20px);
+            float: left;
+            display: block;
+            padding: 20px;
+
+            &::before {
+              display: none;
+            }
+          }
+
+          @media (max-width: $tablet-original) {
+            width: 100%;
+            float: none;
+            padding: 20px 20px 40px;
+          }
+
+          &:not(:first-child) {
+            margin-top: 16px;
+
+            @media (max-width: $tablet-breakpoint1) {
+              margin-top: 0;
+              margin-left: 20px;
+            }
+
+            @media (max-width: $tablet-original) {
+              margin-left: 0;
+              margin-top: 30px;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 12px;
+            background-color: $white;
+            border-radius: 50%;
+            top: 50%;
+            left: 35px;
+            margin-top: -6px;
+          }
+
+          &_title {
+            max-width: 44%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media (min-width: $desktop-breakpoint1) and (max-width: $desktop-breakpoint3) {
+              max-width: 40%;
+            }
+            @media (max-width: $tablet-breakpoint1) {
+              max-width: 100%;
+              margin-bottom: 20px;
+            }
+
+            @media (max-width: $tablet-original) {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          &_title,
+          &_date,
+          a,span {
+            font-size: 15px;
+            line-height: 20px;
+            cursor: pointer;
+          }
+
+          &_date {
+            margin: 0 34px 0 20px;
+            color: $white;
+            width: 26%;
+
+            @media (max-width: $desktop-breakpoint1) {
+              margin: 0 20px;
+            }
+
+            @media (max-width: $tablet-breakpoint1) {
+              width: fit-content;
+              margin: 0;
+              float: left;
+            }
+          }
+
+          a,span {
+            color: $tag-color;
+            text-decoration: underline;
+            cursor: pointer;
+            @media (max-width: $tablet-breakpoint1) {
+              float: right;
+            }
+          }
+        }
+
+        div {
+          color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(0 -0.182)">
+    <g id="message-circle" transform="translate(0 0)">
+      <circle id="Ellipse_38" data-name="Ellipse 38" cx="2.5" cy="2.5" r="2.5" transform="translate(18 17.182)"/>
+      <circle id="Ellipse_39" data-name="Ellipse 39" cx="2.5" cy="2.5" r="2.5" transform="translate(26 17.182)"/>
+      <circle id="Ellipse_40" data-name="Ellipse 40" cx="2.5" cy="2.5" r="2.5" transform="translate(10 17.182)"/>
+      <path id="Path_224512" data-name="Path 224512" d="M30.438,6.893A16.65,16.65,0,0,0,3.332,25.208a1.765,1.765,0,0,1,.15,1.066L2.017,33.316a1.655,1.655,0,0,0,1.665,2h.333l7.126-1.432a2.1,2.1,0,0,1,1.066.15A16.65,16.65,0,0,0,30.521,6.926ZM31.82,20.812A13.32,13.32,0,0,1,13.505,30.935a5.428,5.428,0,0,0-2.081-.433,5.71,5.71,0,0,0-.932.083l-4.7.949.949-4.7a5.145,5.145,0,0,0-.35-3.014A13.322,13.322,0,1,1,31.82,20.812Z" transform="translate(1.313 1.744)"/>
+      <rect id="Rectangle_192" data-name="Rectangle 192" width="40" height="40" transform="translate(0 0.182)" opacity="0"/>
+    </g>
+  </g>
+</svg>

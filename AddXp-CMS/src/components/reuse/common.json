@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_reuse_commons",
+  "info": {
+    "displayName": "Common"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "Summary": {
+      "type": "richtext"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

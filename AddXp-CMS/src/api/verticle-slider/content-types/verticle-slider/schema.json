@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verticle_sliders",
+  "info": {
+    "singularName": "verticle-slider",
+    "pluralName": "verticle-sliders",
+    "displayName": "VerticleSlider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "MainTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "VerticalSlider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "verticle-slider.verticle-slider"
+    }
+  }
+}

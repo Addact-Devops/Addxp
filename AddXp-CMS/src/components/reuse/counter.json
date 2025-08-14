@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reuse_counters",
+  "info": {
+    "displayName": "Counter",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "counter": {
+      "type": "integer"
+    },
+    "CounterDesc": {
+      "type": "richtext"
+    }
+  }
+}

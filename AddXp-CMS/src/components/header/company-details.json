@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_header_company_details",
+  "info": {
+    "displayName": "CompanyDetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Detail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "ClassIcon": {
+      "type": "enumeration",
+      "enum": [
+        "people-iocn",
+        "comment-icon",
+        "user-plus-icon",
+        "user-brand",
+        "user-release-icon"
+      ]
+    },
+    "Hiring": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "singleType",
+  "collectionName": "sitemaps",
+  "info": {
+    "singularName": "sitemap",
+    "pluralName": "sitemaps",
+    "displayName": "Sitemap",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "ServicesImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link-icons"
+    },
+    "StrapiServices": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link-icons"
+    },
+    "StrapiChild": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "CompanyTitle": {
+      "type": "string"
+    },
+    "CompanyLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.css-class"
+    },
+    "InsightsTitle": {
+      "type": "string"
+    },
+    "InsightsLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.css-class"
+    },
+    "OtherLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.css-class"
+    },
+    "HomeLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "SolutionTitle": {
+      "type": "string"
+    },
+    "SolutionLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.css-class"
+    }
+  }
+}

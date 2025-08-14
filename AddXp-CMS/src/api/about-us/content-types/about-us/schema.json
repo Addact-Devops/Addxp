@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About-Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "DirectorMessage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "message.director-message"
+    },
+    "Empowerments": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.empowerment"
+    },
+    "brand_value": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::brand-value.brand-value"
+    },
+    "cta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cta.cta"
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "banner_navigation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner-navigation.banner-navigation"
+    },
+    "innovation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::innovation.innovation"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

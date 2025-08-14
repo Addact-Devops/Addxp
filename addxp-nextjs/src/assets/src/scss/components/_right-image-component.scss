@@ -1,0 +1,45 @@
+.right-image-component {
+  width: 100%;
+  background: $dark-black;
+  @include component_space;
+
+  .row {
+    margin: 0;
+
+    .col-md-6 {
+      padding: 0;
+    }
+  }
+
+  .right-image-right {
+    img {
+      border-radius: 20px;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .right-image-left {
+    padding-right: 114px;
+
+    @media (max-width: $mobile-breakpoint) {
+      padding-right: 0;
+    }
+
+    h5,
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  .right-image-right {
+    @media (max-width: $tablet-original) {
+      display: none;
+    }
+  }
+}

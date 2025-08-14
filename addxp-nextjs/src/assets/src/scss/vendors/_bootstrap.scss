@@ -1,0 +1,128 @@
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+//@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 0 25px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-width: 100% !important;
+    padding: 0 25px;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint1) {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    max-width: 1160px;
+    padding: 0 25px;
+  }
+}
+
+.row {
+  margin: 0 -10px;
+}
+
+.row > * {
+  padding: 0 10px;
+}
+
+section,
+footer,
+header {
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (max-width: $desktop-breakpoint) {
+      padding: 0 25px;
+    }
+    @media screen and (max-width: $tablet-breakpoint1) {
+      padding: 0 25px;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      padding: 0 25px;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint-xs) {
+      padding: 0 20px;
+    }
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.col-lg {
+  @media screen and (min-width: ($mobile-breakpoint + 1)) {
+    flex: 1 0 0%;
+  }
+}
+
+.d-lg-block {
+  @media screen and (min-width: ($mobile-breakpoint + 1)) {
+    display: block !important;
+  }
+}
+
+// .col-md-9{
+//     @media screen and (min-width: ($mobile-breakpoint + 1)){
+//         width: 75%;
+//     }
+// }
+
+.col-md-3 {
+  @media screen and (min-width: ($mobile-breakpoint + 1)) {
+    width: 25%;
+  }
+}
+
+.col-lg-4 {
+  @media (min-width: $tablet-breakpoint) {
+    width: 33.33333333%;
+  }
+}
+
+.col-lg-6 {
+  @media screen and (max-width: $tablet-breakpoint) {
+    width: 100%;
+  }
+}
+
+.col-md-6 {
+  @media screen and (min-width: ($mobile-breakpoint + 1)) and (max-width: $tablet-breakpoint) {
+    width: 50%;
+  }
+}
+
+.offset-lg-1 {
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-left: 0;
+  }
+}
+
+.col-lg-8 {
+  @media screen and (min-width: ($mobile-breakpoint + 1)) and (max-width: $tablet-breakpoint) {
+    width: 75%;
+  }
+}
+
+.col-md-9,
+.col-md-3 {
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: 100%;
+  }
+}

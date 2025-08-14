@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strapi_titles",
+  "info": {
+    "singularName": "strapi-title",
+    "pluralName": "strapi-titles",
+    "displayName": "StrapiTitle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "StrapiTitle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title-description"
+    },
+    "RelationTitle": {
+      "type": "string"
+    },
+    "MobileTitle": {
+      "type": "string"
+    },
+    "MobileDescription": {
+      "type": "richtext"
+    }
+  }
+}

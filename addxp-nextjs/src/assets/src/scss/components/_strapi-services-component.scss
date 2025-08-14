@@ -1,0 +1,74 @@
+.strapi-services-component {
+  @include component_space;
+  display: block;
+  text-align: center;
+
+  h5,
+  .sub_title_5 {
+    color: $white;
+  }
+
+  .row {
+    margin: 60px -8px 0;
+  }
+
+  .col-md-4 {
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+    @media (max-width: $tablet-breakpoint1) {
+      width: 50%;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .strapi-service-box {
+    padding: 25px 25px 25px 25px;
+    background: $dark-gray1;
+    border-radius: 20px;
+    text-align: left;
+    min-height: 461px;
+    height: 100%;
+
+    @media (max-width: $mobile-breakpoint) {
+      border-radius: 10px;
+      min-height: 423px;
+    }
+
+    .large {
+      margin-bottom: 30px;
+      font-weight: 400;
+      color: $tag-color;
+      display: block;
+
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 35px;
+        line-height: 53px;
+      }
+    }
+
+    ul {
+      padding: 0 0 0 20px;
+
+      li {
+        color: $white;
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 300;
+
+        @media (max-width: $tablet-breakpoint) {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
