@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallrays",
+  "info": {
+    "singularName": "gallray",
+    "pluralName": "gallrays",
+    "displayName": "Gallray",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "MainTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title"
+    },
+    "LeftSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "LeftImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.multi-images"
+    },
+    "RightFirst": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "RightFirstImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.multi-images"
+    },
+    "RightSec": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "RightSecImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.multi-images"
+    }
+  }
+}

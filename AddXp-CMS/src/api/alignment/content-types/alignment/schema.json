@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alignments",
+  "info": {
+    "singularName": "alignment",
+    "pluralName": "alignments",
+    "displayName": "Alignment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Alignment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title"
+    }
+  }
+}

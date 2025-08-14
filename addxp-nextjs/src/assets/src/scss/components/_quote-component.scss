@@ -1,0 +1,69 @@
+.quote-component {
+  @include component_space;
+  display: block;
+  background: $light-gray-light;
+
+  .quote-image {
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 35px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+    }
+  }
+
+  .quote-desc {
+    position: relative;
+    padding-left: 113px;
+
+    @media (max-width: $tablet-original) {
+      padding-left: 0;
+    }
+
+    &:before {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/quote-icon1.png) no-repeat left top;
+      position: absolute;
+      top: 0;
+      left: 55px;
+      width: 37px;
+      height: 37px;
+      content: "";
+
+      @media (max-width: $tablet-original) {
+        position: static;
+        display: inline-block;
+      }
+    }
+
+    &:after {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/quote-icon2.png) no-repeat left top;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 37px;
+      height: 37px;
+      content: "";
+    }
+
+    .type6 {
+      color: $black;
+      margin-bottom: 20px;
+      display: block;
+      font-family: "Cardo", serif;
+      font-weight: bold;
+    }
+
+    small {
+      color: $tag-color;
+
+      span {
+        @media (max-width: $mobile-breakpoint) {
+          display: block;
+        }
+      }
+    }
+  }
+}

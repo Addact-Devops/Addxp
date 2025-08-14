@@ -1,0 +1,92 @@
+/* TIMELINE 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.new_timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-top: 100px;
+
+  ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+
+    li {
+      position: relative;
+      display: inline-block;
+      list-style-type: none;
+      width: 474px;
+      height: 3px;
+      background: #e97777;
+
+      &:first-child {
+        width: 1px;
+        background: none;
+      }
+
+      &:last-child {
+        width: 350px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 14px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        bottom: 0;
+        width: 14px;
+        height: 14px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #e97777;
+      }
+
+      &:nth-child(odd) div {
+        top: -16px;
+        transform: translateY(-100%);
+      }
+
+      &:nth-child(odd) div::before {
+        top: 100%;
+        border-width: 8px 8px 0 0;
+        border-color: white transparent transparent transparent;
+      }
+
+      &:nth-child(even) div {
+        top: calc(100% + 16px);
+      }
+
+      &:nth-child(even) div::before {
+        top: -8px;
+        border-width: 8px 0 0 8px;
+        border-color: transparent transparent transparent white;
+      }
+
+      .box-desc {
+        position: absolute;
+        left: calc(100% + 7px);
+        width: 474px;
+        text-align: start;
+        padding: 15px;
+        font-size: 1rem;
+        white-space: normal;
+        color: white;
+
+        h3 {
+          font-size: 25px;
+          line-height: 40px;
+          color: #ffffff;
+          font-weight: 400;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

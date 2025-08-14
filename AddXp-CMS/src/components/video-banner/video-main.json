@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_video_banner_video_mains",
+  "info": {
+    "displayName": "VideoMain",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TitleImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "MainLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link",
+      "required": false
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "VideoUrl": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

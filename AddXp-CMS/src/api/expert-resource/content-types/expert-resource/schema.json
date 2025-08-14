@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expert_resources",
+  "info": {
+    "singularName": "expert-resource",
+    "pluralName": "expert-resources",
+    "displayName": "ExpertResource",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ExpertResource": {
+      "type": "dynamiczone",
+      "components": [
+        "expert-resource.expert-resource"
+      ]
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_reuse_richtexts",
+  "info": {
+    "displayName": "Richtext"
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

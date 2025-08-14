@@ -1,0 +1,382 @@
+.contact-form {
+  padding: 50px 0 100px;
+  background: $dark-black;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0 0 50px 0;
+  }
+
+  .container {
+    @media (max-width: $mobile-breakpoint) {
+      padding: 0 !important;
+    }
+  }
+
+  .contatc-main {
+    background: #fff;
+    display: flex;
+    border-radius: 22px;
+
+    @media (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+    }
+
+    .contact-left {
+      width: 34%;
+      max-width: 376px;
+      position: relative;
+
+      @media (max-width: $mobile-breakpoint) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0 0px 20px;
+        object-fit: cover;
+
+        @media (max-width: $mobile-breakpoint) {
+          border-radius: 20px 20px 0 0;
+          height: 343px;
+          object-fit: cover;
+        }
+
+        &.contact-mobile {
+          display: none;
+        }
+      }
+
+      .caption {
+        position: absolute;
+        bottom: 0;
+        padding: 0 20px 50px;
+
+        @media (max-width: $mobile-breakpoint) {
+          padding-bottom: 30px;
+        }
+
+        .type5 {
+          margin-bottom: 15px;
+        }
+
+        p {
+          color: $white;
+
+          @media (max-width: $mobile-breakpoint) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .contact-right {
+      padding: 35px 98px 60px 110px;
+      width: 67%;
+
+      @media (max-width: $tablet-breakpoint1) {
+        padding: 35px 50px;
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        padding: 30px 25px;
+        width: 100%;
+      }
+
+      .col {
+        @media (max-width: $mobile-breakpoint) {
+          flex: 100%;
+        }
+      }
+
+      .sub_title_5 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+
+      .form-outline {
+        margin-bottom: 43px;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 35px;
+        }
+
+        textarea {
+          @media (max-width: $mobile-breakpoint) {
+            height: 126px !important;
+          }
+        }
+
+        .form-control {
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid $light-gray;
+          overflow: hidden;
+          resize: none;
+          line-height: 35px;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .form-check {
+        margin-bottom: 30px;
+
+        label {
+          margin-left: 15px;
+        }
+
+        .form-check-input {
+          border: 2px solid $light-gray;
+          width: 23px;
+          height: 23px;
+          min-width: 23px;
+
+          @media (max-width: $mobile-breakpoint) {
+            width: 20px;
+            height: 20px;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          &:checked {
+            border: 2px solid $tag-color;
+            background: $tag-color var(--bs-form-check-bg-image);
+          }
+        }
+
+        .form-check-input:checked[type="checkbox"] {
+          background-image: url("https://d1ousucuxrlllk.cloudfront.net/src/images/checked.svg");
+        }
+      }
+
+      .form-check-label {
+        @media (max-width: $mobile-breakpoint) {
+          width: calc(100% - 20px);
+          font-size: 12px;
+          line-height: 18px;
+        }
+
+        a {
+          color: $tag-color;
+          text-decoration: underline;
+        }
+      }
+
+      .form-group {
+        margin-bottom: 40px;
+        position: relative;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 35px;
+        }
+
+        input {
+          border-radius: 10px;
+          border: 1px solid $light-gray;
+          height: 50px;
+          width: 100%;
+          padding: 0 15px;
+          font-weight: 500;
+
+          &:focus-visible {
+            outline: $tag-color;
+            border-color: $tag-color;
+          }
+        }
+
+        input:focus ~ .floating-label,
+        input:not(:focus):valid ~ .floating-label {
+          top: -20px;
+          bottom: 10px;
+          left: 0;
+          font-size: 12px;
+          opacity: 1;
+          color: $tag-color;
+        }
+
+        .floating-label {
+          position: absolute;
+          pointer-events: none;
+          left: 20px;
+          top: 14px;
+          transition: 0.2s ease all;
+          color: $light-gray;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &.career-form {
+    background: transparent;
+
+    .container {
+      @media (max-width: $mobile-breakpoint) {
+        padding: 0 !important;
+      }
+    }
+
+    .contact-right {
+      padding: 35px 60px 60px 110px;
+
+      @media (max-width: $tablet-breakpoint1) {
+        padding: 35px 50px;
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        padding: 30px 25px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .career-top {
+      position: relative;
+      margin-bottom: 34px;
+
+      img {
+        width: 100%;
+        display: block;
+
+        @media (max-width: $tablet-breakpoint) {
+          height: 245px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .career-figcaption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 30px;
+
+        @media (max-width: $tablet-breakpoint) {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0 15px;
+        }
+
+        .career-fig-left {
+          width: 70%;
+
+          @media (max-width: $tablet-breakpoint) {
+            width: 100%;
+            margin-bottom: 30px;
+          }
+
+          .large {
+            font-size: 25px;
+            color: $white;
+            line-height: 38px;
+            font-weight: 500;
+          }
+
+          p {
+            margin-bottom: 0;
+            color: $white;
+          }
+        }
+
+        .career-fig-right {
+          width: 30%;
+
+          @media (max-width: $tablet-breakpoint) {
+            width: auto;
+          }
+
+          .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            cursor: pointer;
+
+            button {
+              display: flex;
+              align-items: center;
+
+              p {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: $white;
+                margin-bottom: 0;
+                font-size: 15px;
+                line-break: anywhere;
+              }
+
+              img {
+                width: 18px;
+                height: 18px;
+                z-index: 9;
+              }
+            }
+
+            .btn {
+              border: 0;
+              color: $white;
+              padding: 8px 16px;
+              border-radius: 10px;
+              font-size: 15px;
+              font-weight: 400;
+              background: $tag-color;
+              height: 41px;
+              cursor: pointer;
+            }
+
+            input {
+              font-size: 100px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              opacity: 0;
+              cursor: pointer;
+              z-index: 1;
+            }
+          }
+
+          .btn-defualt {
+            max-width: 100%;
+            margin-top: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-control,
+button,
+.btn-defualt {
+  &:focus {
+    box-shadow: 0 0;
+  }
+}
+
+.contact-form#connect-now {
+  padding-top: 90px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 50px 0;
+  }
+}

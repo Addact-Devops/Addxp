@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "head_counts",
+  "info": {
+    "singularName": "head-count",
+    "pluralName": "head-counts",
+    "displayName": "HeadCount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AboutCounter": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reuse.counter"
+    },
+    "innovation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::innovation.innovation",
+      "inversedBy": "counter"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,192 @@
+.strapi-banner {
+  width: 100%;
+  min-height: 473px;
+  @include flexbox;
+  align-items: center;
+  background-size: cover !important;
+  position: relative;
+  @media (max-width: $mobile-breakpoint) {
+    min-height: 525px;
+    align-items: flex-end;
+    padding-bottom: 40px;
+    background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-banner-mobile.jpg) no-repeat left top !important;
+    background-size: cover !important;
+  }
+
+  &.case-studies-banner {
+    h1 {
+      font-size: 45px;
+      line-height: 60px;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 15px;
+
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/case_studies_banner_f29486abbe.png) no-repeat center !important;
+      background-size: cover !important;
+    }
+  }
+
+  &.kontent-ai-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/kontent-ai-banner-mobile.jpg) no-repeat center !important;
+      background-size: cover !important;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+  }
+
+  .contact-main {
+    max-width: 608px;
+
+    h5,
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 15px;
+      display: block;
+      line-height: 60px;
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+    }
+
+    .btn-defualt {
+      margin-top: 30px;
+    }
+  }
+
+  &.contentfull-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/contentful-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &.contstack-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/contstack-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &.viro-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/viro-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.strapi-cms-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-cms-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.strapi-pluging-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/pluging-dev-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.strapi-upgrade-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-upgrade-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.strapi-migration-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-migration-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.strapi-ui-ux-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/strapi-ui-ux-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.umbraco-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/umbraco-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &.kentico-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/kentico-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.tab-menu {
+  margin-top: -50px;
+  ul {
+    @include flexbox;
+    margin: 0;
+    padding: 0;
+    position: static;
+    bottom: 5px;
+
+    li {
+      list-style: none;
+      margin-right: 50px;
+      margin-bottom: 20px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

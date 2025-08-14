@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "thank_yous",
+  "info": {
+    "singularName": "thank-you",
+    "pluralName": "thank-yous",
+    "displayName": "ThankYou",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "ThankYou": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.basic-component"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

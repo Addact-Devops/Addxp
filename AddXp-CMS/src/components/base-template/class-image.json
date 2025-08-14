@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_base_template_class_images",
+  "info": {
+    "displayName": "ClassImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "class": {
+      "type": "enumeration",
+      "enum": [
+        "desktop-img",
+        "mobile-img",
+        "desktop-ground",
+        "mobile-ground"
+      ]
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

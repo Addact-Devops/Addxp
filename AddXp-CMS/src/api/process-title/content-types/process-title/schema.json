@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "process_titles",
+  "info": {
+    "singularName": "process-title",
+    "pluralName": "process-titles",
+    "displayName": "ProcessTitle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProcessTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.empowerment"
+    },
+    "development_process": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::development-process.development-process"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

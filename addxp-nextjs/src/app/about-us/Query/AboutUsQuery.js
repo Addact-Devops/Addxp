@@ -1,0 +1,150 @@
+export const DIRECTOR_MESSAGE = `
+query{
+  aboutUs{
+    data{
+      attributes{
+        DirectorMessage{
+          id
+          directorName
+          designation
+          message
+          directorImage{
+            data{
+              attributes{
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`;
+export const EMPOWERMENTS = `
+query{
+  aboutUs{
+    data{
+      attributes{
+        Empowerments{
+          id
+          Title
+          Subtitle
+          Description
+          Images{
+            data{
+              attributes{
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`;
+export const BRAND_VALUES = `
+query{
+  aboutUs{
+   data{
+    attributes{
+      brand_value{
+        data{
+          attributes{
+            BrandValues{
+               id
+              Title
+              SubTitle
+              Body
+              Images{
+                data{
+                  attributes{
+                    url
+                    alternativeText
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}`;
+export const MISIONVISION = `
+  query{
+  missionVisions{
+    data{
+      attributes{
+        MissionVision{
+          id
+          Title
+          SubTitle
+          Description
+          Images{
+            data{
+              attributes{
+                url
+              }
+            }
+          }
+          alignment{
+            data{
+              attributes{
+                Alignment{
+                  Title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}`;
+export const INNOVATIONS = (parameter) => `
+query{
+${parameter}{
+    data{
+      id
+      attributes{
+        innovation{
+          data{
+            id
+            attributes{
+              Innovation{
+                id
+                Title
+                SubTitle
+                Description
+                Body
+                Images{
+                  data{
+                    id
+                    attributes{
+                      url
+                      alternativeText
+                    }
+                  }
+                }
+              }
+              counter{
+                data{
+                  id
+                  attributes{
+                    AboutCounter{
+                      id
+                      counter
+                      CounterDesc
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`;

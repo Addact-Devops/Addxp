@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::experience.experience"
+    },
+    "ExperienceTitle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title"
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "banner_navigation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner-navigation.banner-navigation"
+    },
+    "positions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::position.position"
+    },
+    "gallrays": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallray.gallray"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "AboutLink": {
+      "type": "richtext"
+    }
+  }
+}

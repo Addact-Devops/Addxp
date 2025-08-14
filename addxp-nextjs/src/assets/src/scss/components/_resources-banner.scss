@@ -1,0 +1,42 @@
+.resources-banner {
+  width: 100%;
+  min-height: 538px;
+  @include flexbox;
+  align-items: center;
+  background-size: cover !important;
+  @media (max-width: $mobile-breakpoint) {
+    align-items: flex-end;
+    min-height: 600px;
+    padding-bottom: 40px;
+    background: url(https://do7q3d8g8n6kn.cloudfront.net/images/resources-banner-mobile.jpg) no-repeat left top !important;
+    background-size: cover !important;
+  }
+
+  &.hire-umbraco-banner {
+    @media (max-width: $mobile-breakpoint) {
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/hire-umbraco-banner-mobile.jpg) no-repeat left top !important;
+      background-size: cover !important;
+    }
+  }
+
+  &.hire-umbraco-banner .about-main {
+    max-width: 645px;
+
+    h5,
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 15px;
+      display: block;
+      line-height: 60px;
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+    }
+
+    .btn-defualt {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.thank-you-wrapper {
+  padding: 171px 0;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 100px 15px;
+  }
+
+  .row {
+    padding: 40px;
+    background-color: $white;
+    border-radius: 20px;
+
+    @media (max-width: $mobile-breakpoint) {
+      padding: 20px 15px;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.regular {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+
+  .thank-you-wrapper-content {
+    max-width: 575px;
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 25px;
+  }
+
+  img {
+    max-width: 100%;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-top: 30px;
+    }
+  }
+}

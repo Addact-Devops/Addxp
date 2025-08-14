@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AddressLocation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.basic-component"
+    },
+    "MapLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "contact_infos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-info.contact-info"
+    },
+    "footer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::footer.footer",
+      "inversedBy": "locations"
+    }
+  }
+}

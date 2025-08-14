@@ -1,0 +1,45 @@
+.strapi-right-image {
+  @include component_space;
+  display: block;
+
+  .strapi-image-left {
+    padding-right: 71px;
+    @media (max-width: $mobile-breakpoint) {
+      padding-right: 0;
+    }
+
+    h5,
+    .sub_title_5 {
+      margin-bottom: 25px;
+    }
+
+    p {
+      line-height: 35px;
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 17px;
+      }
+      span {
+        color: $tag-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .strapi-right-bg {
+    background: $white;
+    padding: 35px 25px 35px 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    @media (max-width: $mobile-breakpoint) {
+      padding: 30px 15px;
+      border-radius: 10px;
+    }
+
+    .strapi-image-right {
+      @media (max-width: $mobile-breakpoint) {
+        display: none;
+      }
+    }
+  }
+}

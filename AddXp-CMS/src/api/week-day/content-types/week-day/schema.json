@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "week_days",
+  "info": {
+    "singularName": "week-day",
+    "pluralName": "week-days",
+    "displayName": "WeekDay"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AboutWeekdays": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title-description"
+    }
+  }
+}

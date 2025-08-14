@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_navigations",
+  "info": {
+    "singularName": "banner-navigation",
+    "pluralName": "banner-navigations",
+    "displayName": "BannerNavigation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "NavLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

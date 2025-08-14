@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_base_template_img_descs",
+  "info": {
+    "displayName": "ImgDesc"
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

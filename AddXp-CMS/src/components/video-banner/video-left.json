@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_video_banner_video_lefts",
+  "info": {
+    "displayName": "VideoLeft",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "TagImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link",
+      "required": true
+    },
+    "Number": {
+      "type": "integer",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

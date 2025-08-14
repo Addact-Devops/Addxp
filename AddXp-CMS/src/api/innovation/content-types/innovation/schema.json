@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "innovations",
+  "info": {
+    "singularName": "innovation",
+    "pluralName": "innovations",
+    "displayName": "Innovation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Innovation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.basic-component"
+    },
+    "counter": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::head-count.head-count",
+      "mappedBy": "innovation"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

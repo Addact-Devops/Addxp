@@ -1,0 +1,208 @@
+.services-detail-experience {
+  @include component_space_p;
+  position: relative;
+  background-color: $dark-black;
+  min-height: 100vh;
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &-title {
+    position: relative;
+    z-index: 6;
+
+    h5,
+    p,
+    .sub_title_5 {
+      color: $white;
+      max-width: 768px;
+
+      @media (min-width: $tablet-breakpoint2) and (max-width: $desktop-breakpoint1) {
+        max-width: 550px;
+      }
+    }
+
+    h5,
+    .sub_title_5 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  &-slider {
+    position: relative;
+    z-index: 6;
+
+    &_content {
+      width: 100%;
+      margin-top: 100px;
+      overflow-x: hidden;
+      max-height: 500px;
+      padding-bottom: 250px;
+
+      @media (min-width: $tablet-breakpoint2) and (max-width: $desktop-breakpoint1) {
+        padding-bottom: 250px;
+      }
+
+      @media (max-width: $tablet-breakpoint1) {
+        padding-bottom: 130px;
+      }
+
+      @media (max-width: $tablet-original) {
+        margin-top: 350px;
+        padding-bottom: 80px;
+        max-height: 300px;
+      }
+
+      .type5 {
+        margin-bottom: 15px;
+        color: $tag-color;
+
+        @media (max-width: $tablet-original) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+
+      p {
+        color: $white;
+        font-size: 15px;
+        line-height: 25px;
+
+        &:not(:last-child) {
+          margin-bottom: 180px;
+
+          @media (min-width: $tablet-breakpoint2) and (max-width: $desktop-breakpoint1) {
+            margin-bottom: 50px;
+          }
+
+          @media (max-width: $tablet-original) {
+            margin-bottom: 150px;
+          }
+        }
+      }
+
+      .type5,
+      p {
+        max-width: 530px;
+
+        @media (min-width: $tablet-original) and (max-width: $tablet-breakpoint2) {
+          max-width: 430px;
+        }
+      }
+    }
+
+    &_img {
+      @media (max-width: $tablet-original) {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        margin-top: -13%;
+
+        @media (min-width: $tablet-breakpoint2) and (max-width: $desktop-breakpoint1) {
+          margin-top: -20%;
+        }
+
+        &.mobile-img {
+          max-height: 325px;
+          width: auto;
+          position: absolute;
+          top: -325px;
+          z-index: -1;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+
+          @media (min-width: ($tablet-original + 1)) {
+            display: none;
+          }
+        }
+
+        &.desktop-img {
+          @media (max-width: $tablet-original) {
+            display: none;
+          }
+        }
+
+        &:first-child {
+          position: absolute;
+          right: 0;
+          top: -5%;
+          max-width: 46%;
+          z-index: -1;
+
+          @media (min-width: $desktop-breakpoint4) {
+            top: -5%;
+            max-width: 40%;
+          }
+
+          @media (min-width: $tablet-original) and (max-width: $tablet-breakpoint2) {
+            top: 95px;
+            max-width: 50%;
+          }
+
+          @media (min-width: $tablet-breakpoint2) and (max-width: $desktop-breakpoint1) {
+            top: 0;
+            max-width: 52%;
+          }
+        }
+      }
+
+      .desktop-ground {
+        @media (max-width: $tablet-original) {
+          display: none;
+        }
+      }
+
+      .mobile-ground {
+        display: none;
+
+        @media (max-width: $tablet-original) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.services-detail-experience-slider_img_item {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 485px;
+  min-height: 500px;
+  width: 100%;
+  background-image: url(https://do7q3d8g8n6kn.cloudfront.net/images/moon-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  position: absolute;
+  right: 8%;
+  top: -47%;
+
+  @media (min-width: ($tablet-breakpoint2 + 1px)) and (max-width: $desktop-breakpoint) {
+    right: 20px;
+    top: -60%;
+  }
+
+  @media (max-width: $tablet-breakpoint2) {
+    background-image: url(https://do7q3d8g8n6kn.cloudfront.net/images/moon-bg-img-mobile.png);
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 250px;
+    right: 10%;
+    top: 60px;
+  }
+
+  @media (max-width: $tablet-original) {
+    top: -300px;
+    right: 0;
+    left: 0;
+  }
+}

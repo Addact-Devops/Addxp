@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_version_tab_version_tabs",
+  "info": {
+    "displayName": "VersionTab",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TabTitle": {
+      "type": "string",
+      "required": false
+    },
+    "TabId": {
+      "type": "enumeration",
+      "enum": [
+        "home-tab",
+        "profile-tab"
+      ],
+      "required": true
+    },
+    "TabDesc": {
+      "type": "richtext",
+      "required": true
+    },
+    "Target": {
+      "type": "enumeration",
+      "enum": [
+        "#home",
+        "#profile"
+      ],
+      "required": true
+    }
+  }
+}

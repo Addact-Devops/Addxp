@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visual_uxes",
+  "info": {
+    "singularName": "visual-ux",
+    "pluralName": "visual-uxes",
+    "displayName": "Visual-Ux",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "TabImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.images"
+    },
+    "AllImg": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.multi-images"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "strapi_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::strapi-title.strapi-title"
+    }
+  }
+}

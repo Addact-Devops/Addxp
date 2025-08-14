@@ -1,0 +1,28 @@
+.cta-component {
+  background: $dark-black;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+
+  .banner-desc {
+    max-width: 650px;
+
+    h5,
+    .sub_title_5 {
+      &.xl {
+        color: $white;
+        margin-bottom: 15px;
+      }
+    }
+
+    p {
+      color: $white;
+      padding-right: 137px;
+    }
+
+    .btn-defualt {
+      max-width: 117px;
+      margin-top: 30px;
+    }
+  }
+}

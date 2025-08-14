@@ -1,0 +1,32 @@
+.weekday-component {
+  @include component_space;
+  display: block;
+  background: $light-gray-light;
+  .weekday-desc {
+    padding-left: 104px;
+
+    .sub_title_5 {
+      margin-bottom: 15px;
+      span {
+        display: block;
+        color: $tag-color;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+        font-size: 35px;
+        line-height: 63px;
+        color: $black;
+        font-weight: 600;
+        span {
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+}

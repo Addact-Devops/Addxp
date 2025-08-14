@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_flows",
+  "info": {
+    "singularName": "work-flow",
+    "pluralName": "work-flows",
+    "displayName": "WorkFlow",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "Main": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "Workflowdata": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.long-field"
+    }
+  }
+}

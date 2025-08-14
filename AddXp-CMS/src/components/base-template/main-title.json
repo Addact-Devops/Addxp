@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_base_template_main_titles",
+  "info": {
+    "displayName": "MainTitle"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

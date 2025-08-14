@@ -1,0 +1,344 @@
+.text-input-2,
+.text-input-3,
+.text-input-4 {
+  background-color: $gh-lightgray;
+  border: none;
+  min-height: 48px;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: none;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $primary-font;
+  font-weight: 400;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    line-height: 28px;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $gh-lightgray;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $gh-black1;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $gh-black1;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $gh-black1;
+  }
+}
+
+.text-input-3 {
+  border: 1px solid $gh-black;
+  border-radius: 0;
+  outline: none;
+
+  &:focus {
+    border-color: $gh-black;
+  }
+}
+
+.text-input-4 {
+  border-radius: 0;
+  color: $gh-black;
+}
+
+.custom-selectbox,
+.custom-selectbox-1 {
+  &.selectBox {
+    border: none;
+    position: relative;
+    padding: 12px 24px 12px 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: $primary-font;
+    width: fit-content;
+    display: inline-flex;
+
+    &#selectbox-1 {
+      max-width: 90%;
+
+      .selectBox__value {
+        max-width: 440px;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (min-width: ($mobile-breakpoint + 1)) {
+        max-width: 61%;
+      }
+
+      @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint2) {
+        max-width: 500px;
+      }
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+      }
+    }
+
+    &#selectbox-2 {
+      @media screen and (min-width: ($mobile-breakpoint + 1)) {
+        max-width: 61%;
+      }
+
+      @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint2) {
+        max-width: 500px;
+      }
+
+      .selectBox__value {
+        @media screen and (min-width: ($mobile-breakpoint + 1)) and (max-width: $tablet-breakpoint) {
+          max-width: 685px;
+        }
+      }
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__value {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+    &:after {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      transition: all 0.2s ease-in-out;
+      content: url("https://do7q3d8g8n6kn.cloudfront.net/images/dropdown-arrow.svg");
+    }
+
+    .dropdown-menu {
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+      display: block;
+      top: 100%;
+      width: 100%;
+      max-height: 250px;
+      z-index: -1;
+      overflow-y: auto;
+      transform: translateY(-15%);
+      visibility: hidden;
+      left: 0;
+      padding: 0;
+
+      .dropdown-item {
+        white-space: break-spaces;
+
+        &.active,
+        &:focus,
+        &:active {
+          background-color: $gh-black;
+          color: $gh-white;
+        }
+      }
+    }
+
+    &.show {
+      background-color: transparent;
+      &:after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+      .dropdown-menu {
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .selectBox__value {
+      color: $gh-black;
+    }
+  }
+}
+
+.custom-selectbox-1 {
+  &.selectBox {
+    &:after {
+      content: "";
+      background-image: url("https://do7q3d8g8n6kn.cloudfront.net/images/down-arrow-light.svg");
+      background-position: 8px 13px;
+      background-repeat: no-repeat;
+      height: 32px;
+      width: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      right: 0;
+      @include transition();
+
+      @media screen and (max-width: $tablet-breakpoint) {
+        height: 25px;
+        width: 25px;
+        background-position: 6px 9px;
+        background-size: 12px;
+      }
+
+      @media screen and (min-width: ($mobile-breakpoint + 1)) {
+        display: none;
+      }
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        height: 20px;
+        width: 20px;
+        background-position: 4px 7px;
+      }
+    }
+
+    .selectBox__value {
+      color: $gh-black;
+      text-transform: lowercase;
+      border-bottom: 1px solid $gh-black;
+      padding: 0 0 8px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        padding: 19px 25px 19px 0;
+        font-size: 18px;
+        line-height: 24px;
+        min-height: 64px;
+        width: 100%;
+      }
+    }
+
+    xmp {
+      margin: 0;
+      white-space: break-spaces;
+      font-family: $primary-font;
+      text-transform: lowercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    padding: 0;
+
+    .dropdown-menu {
+      background-color: $gh-white;
+      border-radius: 0;
+
+      .dropdown-item {
+        white-space: break-spaces;
+        padding: 5px 10px;
+        text-transform: lowercase;
+
+        &:hover,
+        &.active,
+        &:focus,
+        &:active {
+          background-color: $gh-black;
+          color: $gh-white;
+        }
+
+        &:hover {
+          @media screen and (max-width: $tablet-breakpoint) {
+            background-color: transparent;
+            color: $gh-black;
+          }
+        }
+      }
+
+      li {
+        ol,
+        ul {
+          padding-left: 0;
+
+          li {
+            a,
+            .dropdown-item {
+              padding-left: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-check {
+  .form-check-input {
+    height: 20px;
+    width: 20px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: transparent;
+
+    &:checked {
+      background-color: $gh-black;
+      border-color: $gh-white;
+    }
+  }
+
+  .form-check-label {
+    padding-left: 15px;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      padding-left: 10px;
+    }
+  }
+}
+
+.input-type-1 {
+  border: 1px solid $gh-blackdark;
+  min-height: 40px;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+
+  i {
+    font-size: 30px;
+    color: $gh-black;
+  }
+
+  .form-control {
+    border-right: 0;
+    border: none;
+
+    &:focus {
+      outline: none;
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
+    color: $gh-black;
+    border-radius: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gh-black;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

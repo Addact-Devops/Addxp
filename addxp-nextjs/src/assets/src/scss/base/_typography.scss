@@ -1,0 +1,344 @@
+@import "color";
+
+h1 {
+  font-size: 60px;
+  line-height: 63px;
+  color: $black;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+h2 {
+  font-size: 100px;
+  line-height: 95px;
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .version-2 {
+    line-height: 75px;
+  }
+}
+h3 {
+  font-size: 75px;
+  line-height: 101px;
+  font-family: var(--font-poppins);
+  color: $black;
+}
+
+h4 {
+  font-size: 60px;
+  line-height: 81px;
+  font-family: var(--font-poppins);
+  color: $black;
+  margin: 0;
+
+  &.xl {
+    font-size: 60px;
+    line-height: 63px;
+    @media (max-width: $tablet-breakpoint) {
+      font-size: 45px;
+      line-height: 55px;
+    }
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+h5,
+.sub_title_5 {
+  font-size: 45px;
+  line-height: 60px;
+  font-family: var(--font-poppins);
+  color: $black;
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 35px;
+    line-height: 45px !important;
+  }
+
+  &.xl {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+h6 {
+  font-size: 35px;
+  line-height: 48px;
+  font-family: var(--font-poppins);
+  color: $black;
+  font-weight: 400;
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 25px;
+    line-height: 38px !important;
+  }
+}
+
+.sub-title {
+  font-size: 22px;
+  line-height: 27px;
+  color: $black;
+  font-family: var(--font-poppins);
+}
+
+.tag {
+  font-size: 20px;
+  line-height: 27px;
+  color: $tag-color;
+  font-family: var(--font-poppins);
+  text-align: center;
+  padding: 3px 25px;
+  border-radius: 7px;
+  background-color: $tag-bg-color;
+}
+
+.tag-line {
+  font-size: 17px;
+  line-height: 30px;
+  color: $tag-color;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: block;
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $tablet-original) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.large {
+  font-size: 35px;
+  line-height: 53px;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+.type1 {
+  font-size: 25px;
+  line-height: 34px;
+  color: $black;
+  font-family: var(--font-poppins);
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 35px;
+    line-height: 53px;
+  }
+
+  @media screen and (max-width: $tablet-original) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.type2 {
+  font-size: 20px;
+  line-height: 27px;
+  color: $black;
+  font-family: var(--font-poppins);
+  font-weight: normal;
+}
+.type3 {
+  font-size: 20px;
+  line-height: 27px;
+  color: $tag-color;
+  font-family: var(--font-poppins);
+  font-weight: bold;
+}
+
+.type4 {
+  font-size: 60px;
+  line-height: 90px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  color: $tag-color;
+}
+
+.type5 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  color: $white;
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+.type6 {
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: bold;
+  color: $white;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.type7 {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 500;
+  color: $black;
+}
+
+.type8 {
+  font-size: 50px;
+  line-height: 76px;
+  font-weight: 400;
+  color: $black;
+  @media screen and (max-width: $tablet-breakpoint1) {
+    font-size: 30px;
+    line-height: 46px;
+  }
+}
+
+.medium {
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  font-family: var(--font-poppins);
+}
+
+.regular {
+  font-size: 20px;
+  line-height: 40px;
+  color: $black;
+  font-family: var(--font-poppins);
+}
+
+small {
+  font-size: 17px;
+  line-height: 26px;
+  color: $black;
+  font-family: var(--font-poppins);
+  display: inline-block;
+
+  &.xs {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2.4px;
+    font-family: var(--font-poppins);
+    display: inline-block;
+    color: $light-gray;
+    margin-bottom: 20px;
+  }
+}
+
+.date {
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+  font-family: var(--font-poppins);
+}
+
+.large-text {
+  font-size: 100px;
+  line-height: 135px;
+  color: $white;
+  font-weight: bold;
+  font-family: var(--font-poppins);
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    font-size: 125px;
+    max-width: 556px;
+    line-height: 150px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    font-size: 70px;
+    line-height: 80px;
+    max-width: 300px;
+  }
+}
+
+.type1-30 {
+  font-size: 30px;
+  line-height: 54px;
+  color: $black;
+  font-family: var(--font-poppins);
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+  color: $black;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  margin-top: 0;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+.label {
+  background: rgba(233, 119, 119, 0.2);
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 23px;
+  color: $tag-color;
+  display: inline-block;
+  font-weight: 500;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 12px;
+  }
+}
+.btn-tag {
+  font-size: 15px;
+  line-height: 18px;
+  border: 1px solid $white;
+  border-radius: 15px;
+  padding: 3px 13px;
+  color: $white;
+}
+
+.label-link {
+  color: $white;
+  background-color: $dark-purple;
+  margin-left: 20px;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

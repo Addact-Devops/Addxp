@@ -1,0 +1,63 @@
+.career-detail-banner {
+  width: 100%;
+  min-height: 538px;
+  @include flexbox;
+  align-items: center;
+  background-size: cover !important;
+  @media (max-width: $mobile-breakpoint) {
+    height: 600px;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    background: url(https://do7q3d8g8n6kn.cloudfront.net/images/mobile-career-detail.jpg) no-repeat left center !important;
+    background-size: cover !important;
+  }
+  .contact-main {
+    max-width: 608px;
+
+    h5,
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 15px;
+      display: block;
+      line-height: 60px;
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+    }
+
+    .btn-defualt {
+      margin-top: 40px;
+    }
+  }
+}
+
+.breadcum {
+  margin-top: -48px;
+  position: relative;
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      margin: 0 6px;
+      color: $white;
+      font-size: 15px;
+      line-height: 23px;
+
+      &:nth-child(2) {
+        color: $light-gray;
+      }
+
+      a {
+        font-size: 15px;
+        line-height: 23px;
+        color: $light-gray;
+      }
+    }
+  }
+}

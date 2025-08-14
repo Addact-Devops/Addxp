@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_experiences",
+  "info": {
+    "singularName": "service-experience",
+    "pluralName": "service-experiences",
+    "displayName": "ServiceExperience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ExperienceList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.title-description"
+    },
+    "ComponentInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title"
+    },
+    "RelationTitle": {
+      "type": "string"
+    }
+  }
+}

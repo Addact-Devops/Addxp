@@ -1,0 +1,32 @@
+.cs-details {
+   display: flex;
+
+   @media (max-width: $mobile-breakpoint) {
+      display: block;
+   }
+
+   .cs-details-left,
+   .cs-details-right {
+      width: 50%;
+
+      @media (max-width: $mobile-breakpoint) {
+         width: 100%;
+      }
+   }
+
+   .case-studies-form-section {
+      .brand-tagline_bottom {
+         justify-content: end;
+         position: sticky;
+         top: 100px;
+      }
+   }
+
+   .cs-detail-box {
+      .sub_title_5 {
+         margin-bottom: 20px;
+      }
+
+      margin-bottom: 70px;
+   }
+}

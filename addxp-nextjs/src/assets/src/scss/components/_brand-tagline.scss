@@ -1,0 +1,238 @@
+.brand-tagline {
+  margin: 100px 0 100px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 50px 0 70px;
+  }
+
+  .container {
+    @media (max-width: $mobile-breakpoint) {
+      padding: 0;
+    }
+  }
+
+  .title {
+    margin-bottom: 35px;
+    color: $white;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $white;
+    display: block;
+    min-height: 73px;
+
+    @media (max-width: $mobile-breakpoint) {
+      min-height: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  .brand-box-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    @media (max-width: $tablet-breakpoint) {
+      flex-wrap: wrap;
+      padding: 0 25px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+      margin-bottom: 70px;
+    }
+
+    .brand-box {
+      padding-right: 96px;
+
+      @media (max-width: $tablet-breakpoint) {
+        width: 50%;
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        padding-right: 0;
+        margin-bottom: 70px;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 17px;
+      line-height: 33px;
+      margin-bottom: 15px;
+      font-weight: 500;
+      color: $white;
+      background: url(https://do7q3d8g8n6kn.cloudfront.net/images/item-icon-right.svg) no-repeat left center;
+      padding-left: 40px;
+
+      @media (max-width: $mobile-breakpoint) {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      span {
+        padding-right: 50px;
+        color: $tag-color;
+      }
+    }
+  }
+}
+
+.brand-tagline_bottom {
+  margin-bottom: 100px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .brand-tag-left {
+    width: 670px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    @media (max-width: $mobile-breakpoint) {
+      width: calc(100% - 50px);
+      order: 1;
+      margin: 50px 25px 0;
+    }
+
+    img {
+      border-radius: 20px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @media (max-width: $mobile-breakpoint) {
+        height: 314px;
+      }
+    }
+
+    .sub_title_5 {
+      position: absolute;
+      bottom: 0;
+      padding: 30px;
+
+      @media (max-width: $mobile-breakpoint) {
+        padding: 15px;
+        text-align: center;
+        bottom: auto;
+
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .brand-tag-right {
+    width: 390px;
+    margin-left: 140px;
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .brand-right {
+      background: $white;
+      border-radius: 20px;
+      padding: 40px 41px;
+      max-width: 376px;
+      width: 100%;
+      min-height: 564px;
+
+      form {
+        .validation {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        max-width: 100%;
+        padding: 30px 25px;
+      }
+
+      h5,
+      .sub_title_5 {
+        margin-bottom: 50px;
+        color: $black;
+        padding-bottom: 0;
+      }
+
+      .form-group {
+        margin-bottom: 40px;
+        position: relative;
+
+        @media (max-width: $mobile-breakpoint) {
+          margin-bottom: 35px;
+        }
+
+        input:focus ~ .floating-label,
+        input:not(:placeholder-shown) ~ .floating-label {
+          top: -20px;
+          bottom: 10px;
+          left: 0;
+          font-size: 12px;
+          opacity: 1;
+          color: $tag-color;
+        }
+
+        input {
+          border-radius: 10px;
+          border: 1px solid $light-gray;
+          height: 50px;
+          width: 100%;
+
+          &:focus-visible {
+            outline: $tag-color;
+            border-color: $tag-color;
+          }
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+
+        .floating-label {
+          position: absolute;
+          pointer-events: none;
+          left: 20px;
+          top: 14px;
+          transition: 0.2s ease all;
+          color: $light-gray;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .sub_title_5 {
+    color: $white;
+
+    @media (max-width: $mobile-breakpoint) {
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,556 @@
+@import "base/fonts";
+
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/typography";
+@import "base/color";
+@import "base/mixins";
+@import "base/icons";
+
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";
+@import "base/buttons_&_links";
+
+@import "layout/navigation";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/carousel";
+@import "components/x-component";
+@import "components/navigation-component";
+@import "components/cta-component";
+@import "components/slider-component";
+@import "components/consultation-email-component";
+@import "components/latest-news";
+@import "components/contact-form";
+@import "components/slider-verticle";
+@import "components/about-banner";
+@import "components/quote-component";
+@import "components/journey-component";
+@import "components/contact-banner";
+@import "components/weekday-component";
+@import "components/maps-component";
+@import "components/image-component";
+@import "components/what-we-believe-component";
+@import "components/6-item-component";
+@import "components/career-component";
+@import "components/slide-form";
+@import "components/activity-component";
+@import "components/strapi-banner";
+@import "components/strapi-half-image";
+@import "components/3-item-component";
+@import "components/strapi-item-feature";
+@import "components/feature-component";
+@import "components/faq-component";
+@import "components/resources-banner";
+@import "components/why-hire-component";
+@import "components/4-item-component";
+@import "components/right-image-component";
+@import "components/hire-strap-resource";
+@import "components/2-service-component";
+@import "components/strapi-quote-component";
+@import "components/strapi-services-component";
+@import "components/development-process-component";
+@import "components/strapi-right-image";
+@import "components/blog-banner";
+@import "components/blog-listing-page";
+@import "components/blog-detail-banner";
+@import "components/blog-detail-content";
+@import "components/workflow-component";
+@import "components/brand-guidelines-component";
+@import "components/brand-two-coloum";
+@import "components/brand-tagline";
+@import "components/press-listing-component";
+@import "components/pluging-right-image-component";
+@import "components/strapi-tabs-section";
+@import "components/career-detail-content";
+@import "components/career-detail-banner";
+@import "components/thank-you";
+@import "components/privacy-policy";
+@import "components/sitemap";
+@import "themes/theme";
+@import "themes/admin";
+@import "components/strapi-cms-consulting";
+@import "components/strapi-maintenance-and-support";
+@import "components/page-not-found";
+@import "components/new_timeline";
+@import "components/Banner-tabbing";
+@import "components/services-detail-hero";
+@import "components/services-process-wrapper";
+@import "components/services-visual-ux";
+@import "components/services-detail-experience";
+@import "components/case-studies-details";
+@import "components/our-partners";
+@import "components/case-studies-slider";
+@import "components/infographic";
+
+html {
+  font-family: var(--font-poppins);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  scroll-padding: 80px;
+
+  @media (max-width: $mobile-breakpoint) {
+    scroll-padding: 60px;
+  }
+}
+
+body {
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+  padding-bottom: 0;
+  background: $light-gray-light;
+  margin: 0;
+}
+
+/* Customize PrismJS theme */
+/* Style the code block */
+/* Style the copy button */
+.toolbar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  opacity: 1 !important; /* Always visible */
+  visibility: visible !important; /* Prevents hiding */
+  transition: none !important; /* Disable any hover effects */
+}
+
+pre[class*="language-"] {
+  border-radius: 10px !important;
+  margin: 18px 0 !important;
+}
+
+.code-toolbar > .toolbar {
+  z-index: 2 !important;
+}
+
+/* Ensure the copy button is always displayed */
+.toolbar button {
+  display: inline-block !important;
+  background: #ff9800 !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  border: none !important;
+  outline: none !important;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.toolbar button span {
+  color: #fff !important;
+  font-size: 12px !important;
+}
+
+/* Remove other buttons (like Edit) */
+.prism-toolbar button:not(:first-child) {
+  display: none;
+}
+
+// img,
+// .img-fluid {
+//   max-width: 100%;
+// }
+
+.scroll-disabled {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-dark {
+  background-color: $dark-black !important;
+
+  .accrodian-section {
+    .accordian-top {
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .latest-news {
+    .large,
+    p {
+      color: $white;
+    }
+
+    &.service-component-2 {
+      ul {
+        li {
+          &:before {
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-verticle {
+    .sub_title_5 {
+      color: $white;
+      max-width: 662px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .consultaion-component {
+    .container {
+      padding: 0;
+
+      @media (max-width: $desktop-breakpoint) {
+        padding: 0 25px;
+      }
+    }
+  }
+}
+
+.header-spacer {
+  height: 65px;
+
+  @media (max-width: $mobile-breakpoint) {
+    height: 65px;
+  }
+}
+
+.light-gray-bg {
+  background: $light-gray-light !important;
+  margin: 0;
+  padding: 0 0 100px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-bottom: 50px;
+  }
+}
+body [class*=""] {
+  font-family: var(--font-poppins);
+}
+
+.desktop {
+  @media (max-width: $tablet-breakpoint1) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: $tablet-breakpoint1) {
+    display: block;
+  }
+}
+
+.popup {
+  // // display: none;
+  // /* Hidden by default */
+  // position: fixed;
+  // // top: 50%;
+  // // left: 50%;
+  // // transform: translate(-50%, -50%);
+  // // width: 100%;
+  // // height: 100%;
+  // // background-color: rgba(0, 0, 0, 0.5);
+  // z-index: 1000;
+  // justify-content: center;
+  // align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.popup-wrapper {
+    .popup-content {
+      padding: 0 25px 0 370px;
+
+      @media screen and (max-width: 1500px) {
+        padding: 0 25px 0 305px;
+      }
+
+      .pop-up-title {
+        padding: 0;
+        line-height: 44px;
+        max-width: 429px;
+        margin: 123px 0 89px 0;
+
+        @media screen and (max-width: 1500px) {
+          margin: 60px 0 80px 0;
+        }
+      }
+
+      .EmailValidation {
+        margin-left: -100px !important;
+
+        @media screen and (max-width: 1500px) {
+          margin-left: -60px !important;
+          padding-left: 0;
+        }
+      }
+
+      .pop-up-form-wrapper {
+        margin-left: -100px;
+
+        @media screen and (max-width: 1500px) {
+          padding-left: 0;
+          margin-left: -60px;
+        }
+      }
+
+      .pop-up-form-wrapper {
+        .btn-radius {
+          background-color: rgba(40, 58, 151, 1);
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+          padding: 10px 18px;
+          height: 44px;
+          min-width: fit-content;
+
+          @media screen and (max-width: 1500px) {
+            font-size: 15px;
+            padding: 10px;
+          }
+        }
+
+        .pop-up-input-box {
+          height: 44px;
+          margin-right: 8px;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &.umbraco-popup {
+    .popup-content {
+      background-image: url("https://do7q3d8g8n6kn.cloudfront.net/umbraco_popup_bg_660194ce15.png");
+    }
+  }
+
+  &.kentico-popup {
+    .popup-content {
+      background-image: url("https://do7q3d8g8n6kn.cloudfront.net/kentiko_popup_bg_8ae3982d29.png");
+
+      @media screen and (max-width: 1500px) {
+        width: 700px;
+        padding: 0 25px 0 285px;
+      }
+
+      .pop-up-title {
+        color: #fff;
+        font-size: 44px;
+        line-height: 60px;
+        font-weight: 700;
+        margin: 84px 0 60px 0;
+        max-width: fit-content;
+
+        @media screen and (max-width: 1500px) {
+          font-size: 33px;
+          line-height: 40px;
+          margin: 60px 0 45px 0;
+        }
+      }
+
+      .pop-up-form-wrapper {
+        margin-left: 0;
+        padding-left: 0;
+
+        .btn-radius {
+          background-color: rgba(1, 179, 253, 1);
+        }
+      }
+
+      .EmailValidation {
+        padding-left: 0;
+        color: #f7b2b2;
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  &.strapi-popup {
+    .popup-content {
+      background-image: url("https://do7q3d8g8n6kn.cloudfront.net/strapi_popup_bg_359a250959.png");
+
+      @media screen and (min-width: 1501px) {
+        height: 450px;
+      }
+
+      @media screen and (max-width: 1500px) {
+        width: 700px;
+        padding: 0 25px 0 265px;
+      }
+
+      .pop-up-title {
+        color: #fff;
+        font-size: 54px;
+        line-height: 89px;
+        font-weight: 700;
+        margin: 65px 0 30px 0;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+
+        @media screen and (max-width: 1500px) {
+          font-size: 33px;
+          line-height: 50px;
+          margin: 50px 0 40px 0;
+        }
+      }
+
+      .pop-up-form-wrapper {
+        margin-left: 0;
+        padding-left: 0;
+
+        .btn-radius {
+          background-color: #fff;
+          color: rgba(51, 47, 193, 1);
+        }
+
+        .pop-up-input-box {
+          border-color: rgba(255, 255, 255, 0.11);
+          color: rgba(255, 255, 255, 0.61);
+          background-color: #ffffff3b;
+
+          &::placeholder {
+            color: rgba(255, 255, 255, 0.61);
+          }
+        }
+      }
+
+      .EmailValidation {
+        padding-left: 0;
+        color: #f7b2b2;
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  .popup-content {
+    background-color: white;
+    background-image: url("https://do7q3d8g8n6kn.cloudfront.net/Pop_Up_Option_01_BG_7bf2ab4ad9.png");
+    background-size: cover;
+    background-position: center;
+    padding: 65px 0px 0px 370px;
+    border-radius: 24px;
+    width: 892px;
+    margin: 0px 30px;
+    height: auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 1500px) {
+      padding: 50px 4px 0px 277px;
+      width: 760px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      font-size: 35px;
+      cursor: pointer;
+      color: #b5b5b5;
+    }
+
+    .pop-up-title {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      // color: #5865F2;
+      text-transform: capitalize;
+      line-height: 122px;
+      padding: 0px 0px 0px 40px;
+
+      @media screen and (max-width: 1500px) {
+        font-size: 34px;
+        line-height: 85px;
+      }
+    }
+
+    .pop-up-subtitle {
+      color: black;
+      font-weight: 400;
+      font-size: 25px;
+      margin-bottom: 90px;
+      padding: 0px 0px 0px 40px;
+
+      @media screen and (max-width: 1500px) {
+        font-size: 20px;
+        margin-bottom: 70px;
+      }
+
+      span {
+        color: black;
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 1500px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .pop-up-desc {
+      // color: #5865F2;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 90px;
+      line-height: 1.5;
+    }
+
+    .pop-up-form-wrapper {
+      padding-bottom: 30px;
+      padding-left: 30px;
+      display: flex;
+      .pop-up-input-box {
+        border-radius: 25px;
+        border: 1px solid #d3d3d3;
+        background-color: #fbf9f9;
+        width: 50%;
+        padding-left: 20px;
+        margin-right: 15px;
+        &::placeholder {
+          color: black;
+          font-weight: 500;
+        }
+      }
+
+      .btn-radius {
+        padding: 13px 25px;
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #e97777;
+        transition: all 0.3s;
+        color: black;
+        border-radius: 31px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        outline: none;
+        border: none;
+      }
+    }
+    .EmailValidation {
+      color: red;
+      padding-bottom: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    display: none !important;
+  }
+}

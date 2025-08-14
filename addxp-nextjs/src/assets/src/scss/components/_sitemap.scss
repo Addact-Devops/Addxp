@@ -1,0 +1,289 @@
+.sitemap-banner {
+   &.contact-banner {
+      @media (max-width: $mobile-breakpoint) {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-banner-mobile.png) no-repeat left top !important;
+         background-size: cover !important;
+      }
+   }
+}
+
+.sitemap-section {
+   margin: 100px 0;
+
+   .icon-text {
+      display: flex;
+      align-items: center;
+
+      span {
+         margin-right: 15px;
+      }
+   }
+
+   .sitemap-icons {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+
+      &.about-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-about-us.svg) 0 0 no-repeat;
+      }
+
+      &.chat-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-chat.svg) 0 0 no-repeat;
+      }
+
+      &.career-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-career.svg) 0 0 no-repeat;
+      }
+
+      &.blog-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-blogs.svg) 0 0 no-repeat;
+      }
+      &.casestudies-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-case-studies.svg) 0 0 no-repeat;
+      }
+
+      &.press-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-press.svg) 0 0 no-repeat;
+      }
+
+      &.brand-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-brand.svg) 0 0 no-repeat;
+      }
+
+      &.user-experience-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/css/user-experience-site.svg) 0 0 no-repeat;
+      }
+
+      &.content-experience-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/css/content-experience-site.svg) 0 0 no-repeat;
+      }
+
+      &.commerce-experience-icon {
+         background: url(https://do7q3d8g8n6kn.cloudfront.net/css/commerce-experience-site.svg) 0 0 no-repeat;
+      }
+   }
+
+   .sitemap-subtitle {
+      a {
+         font-size: 25px;
+         line-height: 38px;
+         font-weight: 600;
+         display: flex;
+         margin-top: 40px;
+         color: $black;
+         display: inline-block;
+
+         &:hover {
+            color: $tag-color;
+
+            .about-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-about-us-hover.svg) 0 0 no-repeat;
+            }
+
+            .chat-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-chat-hover.svg) 0 0 no-repeat;
+            }
+
+            .career-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-career-hover.svg) 0 0 no-repeat;
+            }
+
+            .blog-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-blogs-hover.svg) 0 0 no-repeat;
+            }
+            .casestudies-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-case-studies-hover.svg) 0 0 no-repeat;
+            }
+
+            .press-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-press-hover.svg) 0 0 no-repeat;
+            }
+
+            .brand-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/images/sitemap-brand-hover.svg) 0 0 no-repeat;
+            }
+
+            .user-experience-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/css/user-experience-site-hover.svg) 0 0 no-repeat;
+            }
+
+            .content-experience-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/css/content-experience-site-hover.svg) 0 0 no-repeat;
+            }
+
+            .commerce-experience-icon {
+               background: url(https://do7q3d8g8n6kn.cloudfront.net/css/commerce-experience-site-hover.svg) 0 0
+                  no-repeat;
+            }
+         }
+      }
+
+      img {
+         margin-right: 15px;
+      }
+   }
+
+   .mb-60 {
+      margin-bottom: 60px;
+
+      @media (max-width: $mobile-breakpoint) {
+         margin-bottom: 50px;
+      }
+   }
+
+   @media (max-width: $mobile-breakpoint) {
+      margin: 50px 0;
+   }
+
+   .sitemap-title {
+      font-size: 35px;
+      line-height: 45px;
+      color: $black;
+
+      a {
+         color: $black;
+         text-decoration: underline;
+         text-decoration-color: transparent;
+         text-decoration-thickness: 2px;
+
+         &:hover {
+            color: $tag-color;
+            text-decoration-color: $tag-color;
+         }
+      }
+   }
+
+   .sitemap-title-services {
+      margin: 60px 0 30px;
+
+      @media (max-width: $mobile-breakpoint) {
+         margin: 50px 0 40px;
+      }
+   }
+
+   .sitemap-services-list {
+      @media (min-width: $mobile-breakpoint) {
+         margin-left: 60px;
+      }
+
+      .hover-border-left {
+         position: relative;
+
+         @media (min-width: $mobile-breakpoint) {
+            display: inline-block;
+         }
+
+         img {
+            max-height: 64px;
+         }
+
+         &:after {
+            position: absolute;
+            left: -15px;
+            display: block;
+            content: "";
+            border-left: solid 3px #e97777;
+            height: 70px;
+            transform: scaleY(0);
+            transition: transform 250ms ease-in-out;
+            top: 0;
+            border-radius: 3px;
+         }
+
+         &:hover:after {
+            transform: scaleY(1);
+         }
+      }
+
+      img {
+         margin-bottom: 40px;
+
+         @media (max-width: $mobile-breakpoint) {
+            display: block;
+            margin-bottom: 20px;
+         }
+      }
+
+      div {
+         &:not(:last-child) {
+            margin-bottom: 32px;
+
+            @media (max-width: $mobile-breakpoint) {
+               margin-bottom: 25px;
+            }
+         }
+      }
+
+      .services-images {
+         img {
+            margin-bottom: 0;
+         }
+
+         div {
+            &:not(:last-child) {
+               margin-bottom: 50px;
+            }
+         }
+      }
+
+      ul {
+         padding-left: 20px;
+         margin-bottom: 0;
+         display: inline-block;
+
+         a {
+            color: $black;
+            display: inline-block;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            text-decoration-thickness: 1px;
+            @include transition;
+
+            &:hover {
+               color: $tag-color;
+               text-decoration-color: $tag-color;
+
+               p {
+                  color: $tag-color;
+               }
+            }
+         }
+
+         li {
+            font-size: 20px;
+
+            @media (max-width: $mobile-breakpoint) {
+               font-size: 15px;
+            }
+
+            p {
+               font-size: 20px;
+               line-height: 45px;
+               margin-bottom: 0;
+
+               @media (max-width: $mobile-breakpoint) {
+                  font-size: 15px;
+                  line-height: normal;
+               }
+            }
+         }
+      }
+   }
+
+   .row {
+      margin-bottom: 100px;
+
+      @media (max-width: $mobile-breakpoint) {
+         margin-bottom: 50px;
+      }
+
+      .col-12 {
+         &:first-of-type {
+            @media (max-width: $mobile-breakpoint) {
+               margin-bottom: 50px;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services_processes",
+  "info": {
+    "singularName": "services-process",
+    "pluralName": "services-processes",
+    "displayName": "ServicesProcess",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "ServiceTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title"
+    },
+    "ServiceList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "expert-resource.expert-resource"
+    }
+  }
+}

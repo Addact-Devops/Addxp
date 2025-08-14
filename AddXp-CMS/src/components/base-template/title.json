@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_base_template_titles",
+  "info": {
+    "displayName": "Title"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "string"
+    }
+  }
+}

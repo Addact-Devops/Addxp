@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_verticle_slider_verticle_sliders",
+  "info": {
+    "displayName": "VerticleSlider",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TabTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "SubTitle": {
+      "type": "string",
+      "required": false
+    },
+    "SubDescription": {
+      "type": "richtext",
+      "required": false
+    },
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

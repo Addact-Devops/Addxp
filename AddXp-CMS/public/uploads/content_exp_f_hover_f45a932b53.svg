@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_18470" data-name="Group 18470" transform="translate(-718 -6549)">
+    <rect id="Rectangle_122" data-name="Rectangle 122" width="32" height="32" rx="5" transform="translate(718 6549)" fill="#e97777"/>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(723.883 6555.311)">
+      <g id="edit-2" transform="translate(-0.883 -0.883)">
+        <rect id="Rectangle_123" data-name="Rectangle 123" width="22" height="22" transform="translate(0 -0.428)" fill="#fff" opacity="0"/>
+        <path id="Path_224490" data-name="Path 224490" d="M17.068,20H4.871a.871.871,0,1,0,0,1.742h12.2a.871.871,0,1,0,0-1.742Z" transform="translate(0.125 -1.936)" fill="#fff"/>
+        <path id="Path_224491" data-name="Path 224491" d="M4.871,15.946h.078l3.633-.331a1.742,1.742,0,0,0,1.054-.5l7.841-7.841a1.673,1.673,0,0,0-.061-2.361L15.029,2.53a1.742,1.742,0,0,0-2.317-.061L4.871,10.31a1.742,1.742,0,0,0-.5,1.054L4,15a.869.869,0,0,0,.871.95Zm8.947-12.2L16.2,6.128l-1.742,1.7L12.119,5.492ZM6.064,11.512l4.9-4.87,2.352,2.352L8.443,13.873l-2.614.244Z" transform="translate(0.126 0.376)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

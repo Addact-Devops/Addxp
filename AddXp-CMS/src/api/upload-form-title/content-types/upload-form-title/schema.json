@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upload_form_titles",
+  "info": {
+    "singularName": "upload-form-title",
+    "pluralName": "upload-form-titles",
+    "displayName": "UploadFormTitle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RelationTitle": {
+      "type": "string"
+    },
+    "Left": {
+      "type": "component",
+      "repeatable": false,
+      "component": "expert-resource.expert-resource"
+    },
+    "Right": {
+      "type": "component",
+      "repeatable": false,
+      "component": "expert-resource.expert-resource"
+    },
+    "RightHead": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    }
+  }
+}

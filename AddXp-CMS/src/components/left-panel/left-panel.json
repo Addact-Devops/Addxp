@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_left_panel_left_panels",
+  "info": {
+    "displayName": "LeftPanel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.title-description"
+    },
+    "ImageData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.images"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_values",
+  "info": {
+    "singularName": "brand-value",
+    "pluralName": "brand-values",
+    "displayName": "Brand Value"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BrandValues": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.basic-component"
+    }
+  }
+}

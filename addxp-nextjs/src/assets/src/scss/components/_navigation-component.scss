@@ -1,0 +1,74 @@
+.navigate-component {
+   padding: 30px 0 20px 0;
+   background: $black;
+   height: 100%;
+   z-index: 2;
+   position: relative;
+   @media (max-width: $mobile-breakpoint) {
+      display: none;
+   }
+   h5,
+   .sub_title_5 {
+      text-align: center;
+      color: $tag-color;
+   }
+
+   .navigate-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+      min-width: 110%;
+      margin-top: 20px;
+
+      .navigate-items {
+         display: flex;
+         align-items: center;
+      }
+
+      img {
+         transform: scale(1);
+         opacity: 0;
+         color: $tag-color;
+         min-width: 176px;
+         max-height: 56px;
+         height: fit-content;
+
+         &:hover {
+            transform: scale(1);
+            opacity: 1;
+         }
+      }
+   }
+}
+.wrapper {
+   position: relative;
+   min-height: 100vh;
+   color: #000;
+}
+
+.perso {
+   padding: 0;
+   margin: 0;
+}
+.perso {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   color: #6230e1;
+   background-color: black;
+   clip-path: circle(0px at var(--x, 0) var(--y, 0));
+   transition: clip-path 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);
+   cursor: auto;
+}
+
+.perso.moving {
+   clip-path: circle(130px at var(--x, 0) var(--y, 0));
+   transition: clip-path 0.15s;
+}
+
+.fadeout-images:hover img {
+   opacity: 1 !important;
+}

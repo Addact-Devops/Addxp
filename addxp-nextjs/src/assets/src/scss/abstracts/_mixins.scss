@@ -1,0 +1,130 @@
+@mixin transition {
+  transition: all 0.33s ease-in-out;
+  -webkit-transition: all 0.33s ease-in-out;
+  -moz-transition: all 0.33s ease-in-out;
+  -o-transition: all 0.33s ease-in-out;
+  -ms-transition: all 0.33s ease-in-out;
+}
+
+@mixin shadow {
+  filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+  -moz-filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+  -o-filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+  -ms-filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+}
+
+  // Disable Mobile Select Mixin
+@mixin noSelect() {
+  -webkit-tap-highlight-color: $gh-black;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin bp($point) {
+  @if ($point==xs) {
+      @media (max-width: 575px) {
+          @content;
+      }
+  }
+  @else if ($point==s) {
+      @media (max-width: 767px) {
+          @content;
+      }
+  }
+  @else if ($point==m) {
+      @media (max-width: 1024px) {
+          @content;
+      }
+  }
+  @else if ($point==l) {
+      @media (max-width: 1199px) {
+          @content;
+      }
+  }
+  @else {
+      @media ($point) {
+          @content;
+      }
+  }
+}
+
+@mixin component_space_150 {
+  margin: 150px auto;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+      margin: 50px auto;
+  }
+}
+
+  @mixin component_space {
+    margin: 100px auto;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        margin: 50px auto;
+    }
+  }
+
+
+  @mixin component_space-72 {
+    margin: 72px auto;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        margin: 40px auto;
+    }
+  }
+
+
+  @mixin component_space_p {
+    padding: 100px 0;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        padding: 40px 0;
+    }
+  }
+
+  @mixin component_space_p_half {
+    padding: 50px 0;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+        padding: 40px 0;
+    }
+  }
+
+
+
+  @mixin container{
+    @media screen and (min-width: ($mobile-breakpoint + 1)){
+      padding: 0 70px;
+    }
+    
+    @media screen and (min-width: ($desktop-breakpoint1 + 1)){
+      max-width: 1280px;
+      padding: 0 20px;
+    }
+
+    @media screen and (min-width: ($desktop-breakpoint + 1)){
+      max-width: 1440px;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      padding : 0 35px;
+    }
+  }
+
+  @mixin small-text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $gh-black;
+  }
+
+  

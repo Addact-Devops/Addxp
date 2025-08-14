@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "key_taglines",
+  "info": {
+    "singularName": "key-tagline",
+    "pluralName": "key-taglines",
+    "displayName": "KeyTagline",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Subtagline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brand-guideline.key-tagline"
+    }
+  }
+}

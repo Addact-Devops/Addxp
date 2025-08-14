@@ -1,0 +1,38 @@
+.what-we-compoent {
+  @include component_space;
+
+  .black-bg {
+    background: $dark-black;
+    padding: 70px 60px;
+    border-radius: 20px;
+    @media (max-width: $mobile-breakpoint) {
+      margin: 0;
+      padding: 30px 15px 48px;
+    }
+  }
+
+  .quote-image {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .weekday-desc {
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 50px;
+    }
+    .tag-line {
+      margin-bottom: 15px;
+      display: block;
+    }
+    .sub_title_5 {
+      color: $white;
+      margin-bottom: 30px;
+    }
+
+    P {
+      color: $white;
+    }
+  }
+}

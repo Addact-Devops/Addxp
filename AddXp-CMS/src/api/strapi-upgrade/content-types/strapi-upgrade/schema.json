@@ -1,0 +1,110 @@
+{
+  "kind": "singleType",
+  "collectionName": "strapi_upgrades",
+  "info": {
+    "singularName": "strapi-upgrade",
+    "pluralName": "strapi-upgrades",
+    "displayName": "Strapi-Upgrade",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "PageTitle",
+      "required": true
+    },
+    "banner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner.banner"
+    },
+    "experience": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::experience.experience"
+    },
+    "cta": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cta.cta"
+    },
+    "strapi_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::strapi-title.strapi-title"
+    },
+    "related_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::related-service.related-service"
+    },
+    "service_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::strapi-title.strapi-title"
+    },
+    "expert_resource": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::expert-resource.expert-resource"
+    },
+    "news_heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::news-heading.news-heading"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "faq_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faq-title.faq-title"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq"
+    },
+    "process_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::process-title.process-title"
+    },
+    "service_card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service-card.service-card"
+    },
+    "srapi_versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::srapi-version.srapi-version"
+    },
+    "form_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::form-title.form-title"
+    },
+    "contact_form": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-form-title.contact-form-title"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

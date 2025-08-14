@@ -1,0 +1,94 @@
+export const WEEKDAYS = `
+
+query{
+  contactWeekdays{
+    data{
+      id
+      attributes{
+        week_days{
+          data{
+            attributes{
+              AboutWeekdays{
+                id
+                Title
+                Description
+              }
+            }
+          }
+        }
+        ContactWeekday{
+          id
+          Title
+           SubTitle
+          Body
+          Images{
+            data{
+              attributes{
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`;
+
+export const LOCATIONS = `
+query{
+  locations{
+    data{
+      id
+      attributes{
+        AddressLocation{
+          id
+          Title
+          SubTitle
+          Body
+        }
+        MapLinks{
+          id
+          href
+          label
+          target
+          isExternal
+        }
+        contact_infos{
+          data{
+            id
+            attributes{
+              ContactInfo{
+                id
+                Icons{
+                  data{
+                    id
+                    attributes{
+                      url
+                      alternativeText
+                    }
+                  }
+                }
+                HoverIcon{
+                  data{
+                    id
+                    attributes{
+                      url
+                      alternativeText
+                    }
+                  }
+                }
+                LinkIcons{
+                  id
+                  href
+                  label
+                  target
+                  isExternal
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`;

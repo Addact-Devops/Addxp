@@ -1,0 +1,32 @@
+@mixin screen($device-width, $type: max) {
+    @if $type == "min" {
+        @media screen and (min-width: px-to-em($device-width, 16px)) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: px-to-em($device-width, 16px)) {
+            @content;
+        }
+    }
+}
+@mixin button-default {
+    color: $gh-blackdark;
+    background-color: $gh-green1;
+    padding: 0.5rem 20px;
+    font-weight: bold;
+    text-transform: none;
+
+    &:hover {
+        background-color: shade($gh-green1, 90%);
+        color: $gh-blackdark;
+    }
+
+    &:focus {
+        outline-offset: -5px;
+    }
+
+    &:after {
+        display: none !important;
+    }
+}

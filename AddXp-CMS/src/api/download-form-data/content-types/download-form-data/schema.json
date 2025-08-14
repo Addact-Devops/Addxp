@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "download_form_datas",
+  "info": {
+    "singularName": "download-form-data",
+    "pluralName": "download-form-datas",
+    "displayName": "DownloadFormData",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string"
+    },
+    "BusinessEmail": {
+      "type": "email"
+    },
+    "PhoneNumber": {
+      "type": "biginteger"
+    }
+  }
+}

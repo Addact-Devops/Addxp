@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "MobileView": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.basic-component"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.service"
+    },
+    "MobImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ServiceTitle": {
+      "type": "string"
+    },
+    "CompanyTitle": {
+      "type": "string"
+    },
+    "InsightTitle": {
+      "type": "string"
+    },
+    "Company": {
+      "type": "component",
+      "repeatable": false,
+      "component": "base-template.generic-template"
+    },
+    "CompanyDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.company-details"
+    },
+    "Insights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.generic-template"
+    },
+    "InsightsDetail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.company-details"
+    },
+    "contact_form_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-form-title.contact-form-title"
+    },
+    "LatestBlogs": {
+      "type": "boolean"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "SolutionTitle": {
+      "type": "string"
+    },
+    "SolutionDesc": {
+      "type": "richtext"
+    },
+    "SolutionComponents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "base-template.general-template"
+    }
+  }
+}

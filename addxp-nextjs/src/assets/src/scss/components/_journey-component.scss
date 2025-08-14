@@ -1,0 +1,32 @@
+.journey-component {
+  @include component_space;
+  display: block;
+  background: $light-gray-light;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 50px 0 !important;
+  }
+
+  small {
+    color: $tag-color;
+    margin-bottom: 15px;
+  }
+
+  h5,
+  .sub_title_5 {
+    margin-bottom: 40px;
+    @media (max-width: $mobile-breakpoint) {
+      margin-bottom: 30px;
+    }
+  }
+
+  img {
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 100%;
+    @media (max-width: $mobile-breakpoint) {
+      height: 205px;
+      object-fit: cover;
+    }
+  }
+}
