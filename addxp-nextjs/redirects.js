@@ -142,16 +142,56 @@ module.exports = [
   {
     "source": "/ui-ux-designer",
     "destination": "https://www.addact.net/careers/ui-ux-designer",
-    "permanent": false
+    "permanent": true
   },
   {
     "source": "/terms-conditions",
     "destination": "https://www.addact.net/terms-of-use",
-    "permanent": false
+    "permanent": true
   },
   {
     "source": "/privacy-policy",
     "destination": "https://www.addact.net/privacy-policy",
-    "permanent": false
+    "permanent": true
+  },
+  {
+    "source": "/strapi-migration-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/infographic/upgrade-or-rebuild-umbraco-decision",
+    "destination": "https://www.addact.net/",
+    "permanent": true
+  },
+  {
+    "source": "/strapi-cms-development-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/strapi-cms-consultation-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/strapi-ui-design-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/strapi-support-maintenance-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/strapi-upgrade-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/hire-strapi-developer",
+    "destination": "https://www.addact.net/strapi-cms-development/hire-strapi-developer",
+    "permanent": true
   }
 ];
