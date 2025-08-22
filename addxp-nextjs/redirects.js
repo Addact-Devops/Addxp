@@ -51,7 +51,7 @@ module.exports = [
   },
   {
     "source": "/contact-us",
-    "destination": "https://www.addact.net/contact",
+    "destination": "https://www.addact.net/contact-us",
     "permanent": true
   },
   {
@@ -128,5 +128,30 @@ module.exports = [
     "source": "/press-release/:slug",
     "destination": "https://www.addact.net/press-releases/:slug",
     "permanent": true
+  },
+  {
+    "source": "/strapi-plugin-development-service",
+    "destination": "https://www.addact.net/strapi-cms-development",
+    "permanent": true
+  },
+  {
+    "source": "/sitecore-xm-cloud-service",
+    "destination": "https://www.addact.net/sitecore-cms-development/sitecore-xm-cloud-services",
+    "permanent": true
+  },
+  {
+    "source": "/ui-ux-designer",
+    "destination": "https://www.addact.net/careers/ui-ux-designer",
+    "permanent": false
+  },
+  {
+    "source": "/terms-conditions",
+    "destination": "https://www.addact.net/terms-of-use",
+    "permanent": false
+  },
+  {
+    "source": "/privacy-policy",
+    "destination": "https://www.addact.net/privacy-policy",
+    "permanent": false
   }
 ];
