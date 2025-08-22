@@ -18,11 +18,11 @@ We can say we are a combination of a digital experience provider, headless solut
 
 ### `Step : 1 `
 
-- Follow the Strapi-CMS installation Steps First Its given in CMS Readme file and Install Strapi CMS and Mysql.
+-   Follow the Strapi-CMS installation Steps First Its given in CMS Readme file and Install Strapi CMS and Mysql.
 
 ### `Step : 2 `
 
-- Install node JS Form the https://nodejs.org/en (Install latest Version v18.14.0)
+-   Install node JS Form the https://nodejs.org/en (Install latest Version v18.14.0)
 
 ### `Step : 3 `
 
@@ -31,3 +31,11 @@ We can say we are a combination of a digital experience provider, headless solut
 3. Run this command : npm i
 4. Run this command : npm run build (build your nextjs application)
 5. Run this Command : npm run dev (start you application)
+
+## Update Redirection
+
+Add your redirects rule in below file. this file contains source and destination column. `(DONT Change Name of columns)`
+`public/redirects.xlxs`
+
+After updating run this command and it will update `redirect.js`
+`node generateRedirects.js`
